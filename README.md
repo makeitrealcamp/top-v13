@@ -23,6 +23,46 @@
 - Esteban Rodas
 - Jaime Amilcar
 
+## Mentores 👩🏻‍🏫👨🏼‍🏫
+<table>
+  <tr>
+    <td align="center">
+      <a href="profiles/ana-sosa.md">
+        <img src="https://avatars.githubusercontent.com/u/2703269?v=4&s=100" width="100px;" alt=""/>
+        <br />
+        <sub><b>Ana Sosa</b></sub>
+      </a>
+      <br />
+      <span>♓ 🍔 🏋️‍♀️ 🍿</span>
+    </td>
+  <tr/>
+</table>
+
+
+## Estudiantes 👩🏻‍🏫👨🏼‍🏫
+<table>
+  <tr>
+    <td align="center">
+      <a href="">
+        <img src="https://www.pngitem.com/pimgs/m/421-4212617_person-placeholder-image-transparent-hd-png-download.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>John Doe</b></sub>
+      </a>
+      <br />
+      <span>💻 💻 💻</span>
+    </td>
+    <td align="center">
+      <a href="">
+        <img src="https://www.pngitem.com/pimgs/m/421-4212617_person-placeholder-image-transparent-hd-png-download.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>Jane Doe</b></sub>
+      </a>
+      <br />
+      <span>💻 💻 💻</span>
+    </td>
+  <tr/>
+</table>
+
 ## Entregables proyecto grupal 💻🤝
 
 - **Modulo 1**: Wireframes y backlog del proyecto e Historias de usuario.
