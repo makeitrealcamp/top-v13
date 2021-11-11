@@ -46,7 +46,7 @@
 <table>
   <tr>
       <td align="center">
-      <a href="">
+      <a href="profiles/jorge-vicuna.md">
         <img src="https://jorge-vicuna.gitlab.io/jorge-vicuna/static/media/avatar.272f0e79.jpg" width="100px;" alt=""/>
         <br />
         <sub><b>Jorge Vicuña Valle</b></sub>
