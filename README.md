@@ -4,7 +4,7 @@
 
 - [Ana María Sosa](profiles/ana-sosa.md)
 - Roberto Rico
-- Daniel Muñoz
+- [Daniel Muñoz](profiles/daniel-muñoz.md)
 
 ## Estudiantes 👩🏻‍💻🧑🏼‍💻
 
@@ -37,6 +37,17 @@
       </a>
       <br />
       <span>♓ 🍔 🏋️‍♀️ 🍿</span>
+    </td>
+  <tr/>
+  <tr>
+    <td align="center">
+      <a href="profiles/daniel-muñoz.md">
+        <img src="https://avatars.githubusercontent.com/u/36749021?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Daniel Muñoz</b></sub>
+      </a>
+      <br />
+      <span>♐️ 🍔 ️⚽️ 🍿</span>
     </td>
   <tr/>
 </table>
