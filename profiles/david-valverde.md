@@ -1,6 +1,6 @@
-# NOMBRE APELLIDO
+# DAVID VALVERDE
 
-Hola! Soy David Valverde, tengo 23 años y soy aficionado a la programación. 😁
+Hola! Soy David, tengo 23 años y soy aficionado a la programación. 😁
 
 ## Perfiles sociales
 
