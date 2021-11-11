@@ -54,6 +54,15 @@
       <br />
       <span>♌🍗🎸🏀</span>
     </td>
+      <td align="center">
+      <a href="profiles/esteban-rodas.md">
+        <img src="https://avatars.githubusercontent.com/u/85135244?s=400&u=bcc578bcf3d861c5f395adf1bfe00cd6c28855e7&v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Esteban Rodas Ramos</b></sub>
+      </a>
+      <br />
+      <span>♋🍕🎮📖</span>
+    </td>
     <td align="center">
       <a href="">
         <img src="https://www.pngitem.com/pimgs/m/421-4212617_person-placeholder-image-transparent-hd-png-download.png" width="100px;" alt=""/>
