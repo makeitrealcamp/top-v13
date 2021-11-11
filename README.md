@@ -55,6 +55,15 @@
       <span>♌🍗🎸🏀</span>
     </td>
     <td align="center">
+      <a href="profiles/renzo-manrique.md">
+        <img src="https://avatars.githubusercontent.com/u/56410444?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Renzo Manrique</b></sub>
+      </a>
+      <br />
+      <span>♎🍔🎮📽</span>
+    </td>
+    <td align="center">
       <a href="">
         <img src="https://www.pngitem.com/pimgs/m/421-4212617_person-placeholder-image-transparent-hd-png-download.png" width="100px;" alt=""/>
         <br />
