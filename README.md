@@ -54,15 +54,16 @@
       <br />
       <span>♌🍗🎸🏀</span>
     </td>
-    <td align="center">
-      <a href="">
-        <img src="https://www.pngitem.com/pimgs/m/421-4212617_person-placeholder-image-transparent-hd-png-download.png" width="100px;" alt=""/>
+   <td align="center">
+      <a href="profiles/jimena-ruiz.md">
+        <img src="https://avatars.githubusercontent.com/u/26855595?v=4" width="100px;" alt=""/>
         <br />
-        <sub><b>John Doe</b></sub>
+        <sub><b>Jimena Ruiz</b></sub>
       </a>
       <br />
-      <span>💻 💻 💻</span>
+      <span>♌🥞🚲🕹</span>
     </td>
+    <td align="center">
     <td align="center">
       <a href="">
         <img src="https://www.pngitem.com/pimgs/m/421-4212617_person-placeholder-image-transparent-hd-png-download.png" width="100px;" alt=""/>
