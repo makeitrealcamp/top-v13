@@ -55,6 +55,15 @@
       <span>♌🍗🎸🏀</span>
     </td>
     <td align="center">
+      <a href="profiles/jorge-vicuna.md">
+        <img src="https://avatars.githubusercontent.com/u/13375563?s=400&u=b13eeeed9dd235b8423c0e0f0766d5e33e8da9e9&v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Erick Franco Del Castillo Deza</b></sub>
+      </a>
+      <br />
+      <span>♐🍕🎮📚</span>
+    </td>
+    <td align="center">
       <a href="">
         <img src="https://www.pngitem.com/pimgs/m/421-4212617_person-placeholder-image-transparent-hd-png-download.png" width="100px;" alt=""/>
         <br />
