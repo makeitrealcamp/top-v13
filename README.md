@@ -91,6 +91,15 @@
       <br />
       <span>💻 💻 💻</span>
     </td>
+    <td align="center">
+      <a href="profiles/david-valverde.md">
+        <img src="https://avatars.githubusercontent.com/u/93108717?s=100" width="100px;" alt=""/>
+        <br />
+        <sub><b>David Valverde</b></sub>
+      </a>
+      <br />
+      <span>♑🍔🎮📚</span>
+    </td>
   <tr/>
 </table>
 
