@@ -19,7 +19,7 @@
 - Erick Del Castillo
 - Jorge Vicuña
 - Manuel Baella
-- Luis Salcedo
+- [Luis Salcedo](profiles/luis-salcedo.md)
 - Gabriel Mamani
 - Renzo Manrique
 - Esteban Rodas
@@ -90,6 +90,15 @@
       </a>
       <br />
       <span>♎🍔🎮📽</span>
+    </td>
+    <td align="center">
+      <a href="profiles/luis-salcedo.md">
+        <img src="https://avatars.githubusercontent.com/u/8843955?s=200&v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Luis Salcedo</b></sub>
+      </a>
+      <br />
+      <span>♉ 🍝 🎬 🕺</span>
     </td>
     <td align="center">
       <a href="">
