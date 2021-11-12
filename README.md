@@ -10,7 +10,7 @@
 
 - Brigitte Romero
 - Jimena Ruiz
-- Jose Cruz
+- [Martin Cruz](profiles/martin-cruz.md)
 - Jhon Riveros
 - Nicolas Poveda
 - Diego Santana
@@ -45,6 +45,15 @@
 
 <table>
   <tr>
+    <td align="center">
+      <a href="profiles/martin-cruz.md">
+        <img src="https://avatars.githubusercontent.com/u/4636996?v=4" width="100px;" alt="Martin Cruz"/>
+        <br />
+        <sub><b>Martin Cruz</b></sub>
+      </a>
+      <br />
+      <span>♌🍐🎮🎸</span>
+    </td>
       <td align="center">
       <a href="profiles/jorge-vicuna.md">
         <img src="https://jorge-vicuna.gitlab.io/jorge-vicuna/static/media/avatar.272f0e79.jpg" width="100px;" alt=""/>
