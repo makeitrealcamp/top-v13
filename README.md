@@ -8,7 +8,7 @@
 
 ## Estudiantes 👩🏻‍💻🧑🏼‍💻
 
-- Brigitte Romero
+- [Brigitte Romero](profiles/brigitte-romero.md)
 - Jimena Ruiz
 - Jose Cruz
 - Jhon Riveros
@@ -53,6 +53,15 @@
       </a>
       <br />
       <span>♌🍗🎸🏀</span>
+    </td>
+      <td align="center">
+      <a href="profiles/brigitte-romero.md">
+        <img src="https://avatars.githubusercontent.com/u/68497100?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Brigitte Romero Luna</b></sub>
+      </a>
+      <br />
+      <span>♐👩‍🔬🍷🏊🏞</span>
     </td>
     <td align="center">
       <a href="">
