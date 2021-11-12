@@ -24,6 +24,7 @@
 - Renzo Manrique
 - Esteban Rodas
 - Jaime Amilcar
+- Nicolas Poveda
 
 ## Mentores 👩🏻‍🏫👨🏼‍🏫
 
@@ -62,6 +63,15 @@
       </a>
       <br />
       <span>♐👩‍🔬🍷🏊🏞</span>
+    </td>
+    <td align="center">
+      <a href="profiles/nicolaspovedas.md">
+        <img src="https://avatars.githubusercontent.com/u/22968636?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Nicolas Poveda</b></sub>
+      </a>
+      <br />
+      <span>🇨🇴🧠💰</span>
     </td>
     <td align="center">
       <a href="">
