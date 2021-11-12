@@ -5,7 +5,7 @@
 - [Ana María Sosa](profiles/ana-sosa.md)
 - Roberto Rico
 - Daniel Muñoz
-- [Gabriel Mamani](profiles/gabriel-mamani)
+
 
 ## Estudiantes 👩🏻‍💻🧑🏼‍💻
 
@@ -21,7 +21,7 @@
 - Jorge Vicuña
 - Manuel Baella
 - Luis Salcedo
-- Gabriel Mamani
+- [Gabriel Mamani](profiles/gabriel-mamani.md)
 - Renzo Manrique
 - Esteban Rodas
 - Jaime Amilcar
