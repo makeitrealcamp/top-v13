@@ -2,6 +2,7 @@
 
 ## Mentores 👩🏻‍🏫👨🏼‍🏫
 
+- [Ana María Sosa](profiles/ana-sosa.md)}
 - [Ana María Sosa](profiles/ana-sosa.md)
 - Roberto Rico
 - Daniel Muñoz
