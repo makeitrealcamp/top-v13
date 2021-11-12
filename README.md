@@ -5,6 +5,7 @@
 - [Ana María Sosa](profiles/ana-sosa.md)
 - Roberto Rico
 - Daniel Muñoz
+- [Gabriel Mamani](profiles/gabriel-mamani)
 
 ## Estudiantes 👩🏻‍💻🧑🏼‍💻
 
@@ -71,6 +72,15 @@
       </a>
       <br />
       <span>💻 💻 💻</span>
+    </td>
+    <td align="center">
+      <a href="profiles/gabriel-mamani.md">
+        <img src="https://avatars.githubusercontent.com/u/85516522?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Gabriel Mamani</b></sub>
+      </a>
+      <br />
+      <span>♉⚽🍗♟</span>
     </td>
   <tr/>
 </table>
