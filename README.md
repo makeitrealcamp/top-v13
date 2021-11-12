@@ -55,7 +55,7 @@
       <span>♌🍗🎸🏀</span>
     </td>
     <td align="center">
-      <a href="profiles/luis-salcedo.md" target='blank'>
+      <a href="profiles/luis-salcedo.md">
         <img src="https://avatars.githubusercontent.com/u/8843955?s=200&v=4" width="100px;" alt=""/>
         <br />
         <sub><b>Luis Salcedo</b></sub>
