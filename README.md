@@ -46,13 +46,13 @@
 <table>
   <tr>
       <td align="center">
-      <a href="profiles/jorge-vicuna.md">
-        <img src="https://jorge-vicuna.gitlab.io/jorge-vicuna/static/media/avatar.272f0e79.jpg" width="100px;" alt=""/>
+      <a href="profiles/jhon-riveros.md">
+        <img src="https://scontent.fjau2-1.fna.fbcdn.net/v/t1.18169-1/p200x200/20800023_108210289906269_5901395956855294857_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeEuP4ic4ryaQPQYfG-hebb_ajZIWubCAeFqNkha5sIB4acc4Js4EKgQ0PGHNFVxCdueMmyzf2vl6eNXef8iPsII&_nc_ohc=5SV1tWdSYEYAX_dG8NX&_nc_ht=scontent.fjau2-1.fna&oh=52bfc8c6c58cb089d932e060a0bf3de4&oe=61B2CB57" width="100px;" alt=""/>
         <br />
-        <sub><b>Jorge Vicuña Valle</b></sub>
+        <sub><b>Riveros Paraguay Jhon Kenedy</b></sub>
       </a>
       <br />
-      <span>♌🍗🎸🏀</span>
+      <span>♍🍗📑⚽</span>
     </td>
     <td align="center">
       <a href="">
