@@ -2,6 +2,7 @@
 
 ## Mentores 👩🏻‍🏫👨🏼‍🏫
 
+- [Ana María Sosa](profiles/ana-sosa.md)}
 - [Ana María Sosa](profiles/ana-sosa.md)
 - Roberto Rico
 - Daniel Muñoz
@@ -14,7 +15,7 @@
 - Jhon Riveros
 - Nicolas Poveda
 - Diego Santana
-- Lorena Rojas
+- [Lorena Rojas](profiles/lorena-rojas.md)
 - David Valverde
 - Erick Del Castillo
 - Jorge Vicuña
@@ -99,6 +100,15 @@
       </a>
       <br />
       <span>♉ 🍝 🎬 🕺</span>
+    </td>
+    <td align="center">
+      <a href="profiles/lorena-rojas.md">
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHLyhB2DNtaUg/profile-displayphoto-shrink_200_200/0/1611329370518?e=1642032000&v=beta&t=4edA73NcQDPGWxNOl8U85uDcGUZznBPzUa9pXbY7gkU" width="100px;" alt=""/>
+        <br />
+        <sub><b>Lorena Rojas</b></sub>
+      </a>
+      <br />
+      <span>♓ 🍔 🏋️‍♀️ 🍿</span>
     </td>
     <td align="center">
       <a href="">
