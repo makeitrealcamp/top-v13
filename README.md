@@ -15,7 +15,7 @@
 - Jhon Riveros
 - Nicolas Poveda
 - Diego Santana
-- Lorena Rojas
+- [Lorena Rojas](profiles/lorena-rojas.md)
 - David Valverde
 - Erick Del Castillo
 - Jorge Vicuña
