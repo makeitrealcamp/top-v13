@@ -2,28 +2,30 @@
 
 ## Mentores 👩🏻‍🏫👨🏼‍🏫
 
+- [Ana María Sosa](profiles/ana-sosa.md)}
 - [Ana María Sosa](profiles/ana-sosa.md)
 - Roberto Rico
 - Daniel Muñoz
 
 ## Estudiantes 👩🏻‍💻🧑🏼‍💻
 
-- Brigitte Romero
+- [Brigitte Romero](profiles/brigitte-romero.md)
 - Jimena Ruiz
-- Jose Cruz
+- [Martin Cruz](profiles/martin-cruz.md)
 - Jhon Riveros
 - Nicolas Poveda
 - Diego Santana
-- Lorena Rojas
+- [Lorena Rojas](profiles/lorena-rojas.md)
 - David Valverde
 - Erick Del Castillo
 - Jorge Vicuña
 - Manuel Baella
-- Luis Salcedo
+- [Luis Salcedo](profiles/luis-salcedo.md)
 - Gabriel Mamani
 - Renzo Manrique
 - Esteban Rodas
 - Jaime Amilcar
+- Nicolas Poveda
 
 ## Mentores 👩🏻‍🏫👨🏼‍🏫
 
@@ -45,6 +47,15 @@
 
 <table>
   <tr>
+    <td align="center">
+      <a href="profiles/martin-cruz.md">
+        <img src="https://avatars.githubusercontent.com/u/4636996?v=4" width="100px;" alt="Martin Cruz"/>
+        <br />
+        <sub><b>Martin Cruz</b></sub>
+      </a>
+      <br />
+      <span>♌🍐🎮🎸</span>
+    </td>
       <td align="center">
       <a href="profiles/jorge-vicuna.md">
         <img src="https://jorge-vicuna.gitlab.io/jorge-vicuna/static/media/avatar.272f0e79.jpg" width="100px;" alt=""/>
@@ -62,6 +73,51 @@
       </a>
       <br />
       <span>♋🍕🎮📖</span>
+     </td>
+     <td align="center">
+      <a href="profiles/brigitte-romero.md">
+        <img src="https://avatars.githubusercontent.com/u/68497100?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Brigitte Romero Luna</b></sub>
+      </a>
+      <br />
+      <span>♐👩‍🔬🍷🏊🏞</span>
+    </td>
+    <td align="center">
+      <a href="profiles/nicolaspovedas.md">
+        <img src="https://avatars.githubusercontent.com/u/22968636?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Nicolas Poveda</b></sub>
+      </a>
+      <br />
+      <span>🇨🇴🧠💰</span>
+    </td>
+    <td align="center">
+      <a href="profiles/renzo-manrique.md">
+        <img src="https://avatars.githubusercontent.com/u/56410444?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Renzo Manrique</b></sub>
+      </a>
+      <br />
+      <span>♎🍔🎮📽</span>
+    </td>
+    <td align="center">
+      <a href="profiles/luis-salcedo.md">
+        <img src="https://avatars.githubusercontent.com/u/8843955?s=200&v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Luis Salcedo</b></sub>
+      </a>
+      <br />
+      <span>♉ 🍝 🎬 🕺</span>
+    </td>
+    <td align="center">
+      <a href="profiles/lorena-rojas.md">
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHLyhB2DNtaUg/profile-displayphoto-shrink_200_200/0/1611329370518?e=1642032000&v=beta&t=4edA73NcQDPGWxNOl8U85uDcGUZznBPzUa9pXbY7gkU" width="100px;" alt=""/>
+        <br />
+        <sub><b>Lorena Rojas</b></sub>
+      </a>
+      <br />
+      <span>♓ 🍔 🏋️‍♀️ 🍿</span>
     </td>
     <td align="center">
       <a href="">
@@ -80,6 +136,15 @@
       </a>
       <br />
       <span>💻 💻 💻</span>
+    </td>
+    <td align="center">
+      <a href="profiles/david-valverde.md">
+        <img src="https://avatars.githubusercontent.com/u/93108717?s=100" width="100px;" alt=""/>
+        <br />
+        <sub><b>David Valverde</b></sub>
+      </a>
+      <br />
+      <span>♑🍔🎮📚</span>
     </td>
   <tr/>
 </table>
