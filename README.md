@@ -23,7 +23,6 @@
 - Manuel Baella
 - [Gabriel Mamani](profiles/gabriel-mamani.md)
 - [Luis Salcedo](profiles/luis-salcedo.md)
-- Gabriel Mamani
 - Renzo Manrique
 - Esteban Rodas
 - Jaime Amilcar
