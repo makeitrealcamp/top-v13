@@ -2,10 +2,11 @@
 
 ## Mentores 👩🏻‍🏫👨🏼‍🏫
 
-- [Ana María Sosa](profiles/ana-sosa.md)}
+- [Ana María Sosa](profiles/ana-sosa.md)
 - [Ana María Sosa](profiles/ana-sosa.md)
 - Roberto Rico
 - Daniel Muñoz
+
 
 ## Estudiantes 👩🏻‍💻🧑🏼‍💻
 
@@ -20,8 +21,8 @@
 - [Erick Del Castillo](profiles/erick-del-castillo.md)
 - Jorge Vicuña
 - Manuel Baella
+- [Gabriel Mamani](profiles/gabriel-mamani.md)
 - [Luis Salcedo](profiles/luis-salcedo.md)
-- Gabriel Mamani
 - Renzo Manrique
 - Esteban Rodas
 - Jaime Amilcar
@@ -138,6 +139,15 @@
       <span>💻 💻 💻</span>
     </td>
     <td align="center">
+      <a href="profiles/gabriel-mamani.md">
+        <img src="https://avatars.githubusercontent.com/u/85516522?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Gabriel Mamani</b></sub>
+      </a>
+      <br />
+      <span>♉⚽🍗♟</span>
+    </td>
+    <td>
       <a href="profiles/david-valverde.md">
         <img src="https://avatars.githubusercontent.com/u/93108717?s=100" width="100px;" alt=""/>
         <br />
