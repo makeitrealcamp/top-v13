@@ -166,6 +166,15 @@
       <br />
       <span>💻🍔🎮🏋️‍♀️🏀</span>
     </td>
+       <td align="center">
+      <a href="profiles/diego-santana.md">
+        <img src="https://avatars.githubusercontent.com/u/93043227?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Diego Santana</b></sub>
+      </a>
+      <br />
+      <span>♏️ 🍱 📸 🛫</span>
+    </td>
   <tr/>
 </table>
 
