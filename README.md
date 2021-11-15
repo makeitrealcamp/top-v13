@@ -146,6 +146,15 @@
       <br />
       <span>♑🍔🎮📚</span>
     </td>
+    <td align="center">
+      <a href="profiles/amilcar-catari.md">
+        <img src="https://media-exp1.licdn.com/dms/image/D5635AQH9q1MQhbBBqg/profile-framedphoto-shrink_800_800/0/1631841591806?e=1636952400&v=beta&t=BAyYHFXlLj68jPIWIxatiT4IoodozKAKJqdqT7VnSk8" width="100px;" alt=""/>
+        <br />
+        <sub><b>Amilcar Catari</b></sub>
+      </a>
+      <br />
+      <span>💻🍔🎮🏋️‍♀️🏀</span>
+    </td>
   <tr/>
 </table>
 
