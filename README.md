@@ -2,10 +2,11 @@
 
 ## Mentores 👩🏻‍🏫👨🏼‍🏫
 
-- [Ana María Sosa](profiles/ana-sosa.md)}
+- [Ana María Sosa](profiles/ana-sosa.md)
 - [Ana María Sosa](profiles/ana-sosa.md)
 - Roberto Rico
-- Daniel Muñoz
+- [Daniel Muñoz](profiles/daniel-muñoz.md)
+
 
 ## Estudiantes 👩🏻‍💻🧑🏼‍💻
 
@@ -17,11 +18,11 @@
 - Diego Santana
 - [Lorena Rojas](profiles/lorena-rojas.md)
 - David Valverde
-- Erick Del Castillo
+- [Erick Del Castillo](profiles/erick-del-castillo.md)
 - Jorge Vicuña
 - Manuel Baella
+- [Gabriel Mamani](profiles/gabriel-mamani.md)
 - [Luis Salcedo](profiles/luis-salcedo.md)
-- Gabriel Mamani
 - Renzo Manrique
 - Esteban Rodas
 - Jaime Amilcar
@@ -36,6 +37,16 @@
         <img src="https://avatars.githubusercontent.com/u/2703269?v=4&s=100" width="100px;" alt=""/>
         <br />
         <sub><b>Ana Sosa</b></sub>
+      </a>
+      <br />
+      <span>♓ 🍔 🏋️‍♀️ 🍿</span>
+    </td>
+  <tr/>
+    <td align="center">
+      <a href="profiles/daniel-muñoz.md">
+        <img src="https://avatars.githubusercontent.com/u/36749021?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Daniel Muñoz</b></sub>
       </a>
       <br />
       <span>♓ 🍔 🏋️‍♀️ 🍿</span>
@@ -65,16 +76,16 @@
       <br />
       <span>♌🍗🎸🏀</span>
     </td>
-      <td align="center">
-      <a href="profiles/esteban-rodas.md">
-        <img src="https://avatars.githubusercontent.com/u/85135244?s=400&u=bcc578bcf3d861c5f395adf1bfe00cd6c28855e7&v=4" width="100px;" alt=""/>
-        <br />
-        <sub><b>Esteban Rodas Ramos</b></sub>
-      </a>
+    <td align="center">
+    <a href="profiles/esteban-rodas.md">
+      <img src="https://avatars.githubusercontent.com/u/85135244?s=400&u=bcc578bcf3d861c5f395adf1bfe00cd6c28855e7&v=4" width="100px;" alt=""/>
       <br />
-      <span>♋🍕🎮📖</span>
-     </td>
-     <td align="center">
+      <sub><b>Esteban Rodas Ramos</b></sub>
+    </a>
+    <br />
+    <span>♋🍕🎮📖</span>
+   </td>
+    <td align="center">
       <a href="profiles/brigitte-romero.md">
         <img src="https://avatars.githubusercontent.com/u/68497100?v=4" width="100px;" alt=""/>
         <br />
@@ -120,24 +131,33 @@
       <span>♓ 🍔 🏋️‍♀️ 🍿</span>
     </td>
     <td align="center">
-      <a href="">
-        <img src="https://www.pngitem.com/pimgs/m/421-4212617_person-placeholder-image-transparent-hd-png-download.png" width="100px;" alt=""/>
+      <a href="profiles/erick-del-castillo.md">
+        <img src="https://avatars.githubusercontent.com/u/13375563?s=400&u=b13eeeed9dd235b8423c0e0f0766d5e33e8da9e9&v=4" width="100px;" alt=""/>
         <br />
-        <sub><b>John Doe</b></sub>
+        <sub><b>Erick Franco Del Castillo Deza</b></sub>
       </a>
       <br />
-      <span>💻 💻 💻</span>
+      <span>♐🍕🎮📚</span>
     </td>
     <td align="center">
       <a href="">
-        <img src="https://www.pngitem.com/pimgs/m/421-4212617_person-placeholder-image-transparent-hd-png-download.png" width="100px;" alt=""/>
+        <img src="https://avatars.githubusercontent.com/u/26855595?s=400&u=7b35b03e47bd4b51b28b9413b428c2071ab8cb94&v=4" width="100px;" alt=""/>
         <br />
-        <sub><b>Jane Doe</b></sub>
+        <sub><b>Jimena Ruiz</b></sub>
       </a>
       <br />
-      <span>💻 💻 💻</span>
+      <span>♌🥞🚲🕹</span>
     </td>
     <td align="center">
+      <a href="profiles/gabriel-mamani.md">
+        <img src="https://avatars.githubusercontent.com/u/85516522?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Gabriel Mamani</b></sub>
+      </a>
+      <br />
+      <span>♉⚽🍗♟</span>
+    </td>
+    <td>
       <a href="profiles/david-valverde.md">
         <img src="https://avatars.githubusercontent.com/u/93108717?s=100" width="100px;" alt=""/>
         <br />
@@ -145,6 +165,33 @@
       </a>
       <br />
       <span>♑🍔🎮📚</span>
+    </td>
+    <td align="center">
+      <a href="profiles/amilcar-catari.md">
+        <img src="https://media-exp1.licdn.com/dms/image/D5635AQH9q1MQhbBBqg/profile-framedphoto-shrink_800_800/0/1631841591806?e=1636952400&v=beta&t=BAyYHFXlLj68jPIWIxatiT4IoodozKAKJqdqT7VnSk8" width="100px;" alt=""/>
+        <br />
+        <sub><b>Amilcar Catari</b></sub>
+      </a>
+      <br />
+      <span>💻🍔🎮🏋️‍♀️🏀</span>
+    </td>
+       <td align="center">
+      <a href="profiles/diego-santana.md">
+        <img src="https://avatars.githubusercontent.com/u/93043227?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Diego Santana</b></sub>
+      </a>
+      <br />
+      <span>♏️ 🍱 📸 🛫</span>
+    </td>
+    <td align="center">
+      <a href="profiles/manuel-baella.md">
+        <img src="https://avatars.githubusercontent.com/u/63432814?s=400&u=619f04a36b53efce4d79bd2fc1be171b24f4235d&v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Manuel Baella</b></sub>
+      </a>
+      <br />
+      <span>♑❄✈🗻</span>
     </td>
   <tr/>
 </table>
