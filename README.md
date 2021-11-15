@@ -175,6 +175,15 @@
       <br />
       <span>♏️ 🍱 📸 🛫</span>
     </td>
+    <td align="center">
+      <a href="profiles/manuel-baella.md">
+        <img src="https://avatars.githubusercontent.com/u/63432814?s=400&u=619f04a36b53efce4d79bd2fc1be171b24f4235d&v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Manuel Baella</b></sub>
+      </a>
+      <br />
+      <span>♑❄✈🗻</span>
+    </td>
   <tr/>
 </table>
 
