@@ -76,7 +76,7 @@
       <br />
       <span>♌🍗🎸🏀</span>
     </td>
-      <td align="center">
+    <td align="center">
       <a href="profiles/brigitte-romero.md">
         <img src="https://avatars.githubusercontent.com/u/68497100?v=4" width="100px;" alt=""/>
         <br />
@@ -132,21 +132,12 @@
     </td>
     <td align="center">
       <a href="">
-        <img src="https://www.pngitem.com/pimgs/m/421-4212617_person-placeholder-image-transparent-hd-png-download.png" width="100px;" alt=""/>
+        <img src="https://avatars.githubusercontent.com/u/26855595?s=400&u=7b35b03e47bd4b51b28b9413b428c2071ab8cb94&v=4" width="100px;" alt=""/>
         <br />
-        <sub><b>John Doe</b></sub>
+        <sub><b>Jimena Ruiz</b></sub>
       </a>
       <br />
-      <span>💻 💻 💻</span>
-    </td>
-    <td align="center">
-      <a href="">
-        <img src="https://www.pngitem.com/pimgs/m/421-4212617_person-placeholder-image-transparent-hd-png-download.png" width="100px;" alt=""/>
-        <br />
-        <sub><b>Jane Doe</b></sub>
-      </a>
-      <br />
-      <span>💻 💻 💻</span>
+      <span>♌🥞🚲🕹</span>
     </td>
     <td align="center">
       <a href="profiles/gabriel-mamani.md">
