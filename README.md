@@ -177,6 +177,13 @@
   <tr/>
 </table>
 
+## Equipos proyecto grupal
+
+1. Nicolás, Martin, Diego y Gabriel
+2. Luis, Jimena, Jorge y David
+3. Lorena, Jhon, Esteban y Manuel
+4. Jaime, Brigitte, Renzo y Erick
+
 ## Entregables proyecto grupal 💻🤝
 
 - **Modulo 1**: Wireframes y backlog del proyecto e Historias de usuario.

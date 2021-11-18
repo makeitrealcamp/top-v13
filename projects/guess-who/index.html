@@ -10,7 +10,6 @@
 <body>
 	<div class="guessWho">
 		<div id="selected"></div>
-
 		<div class="board">
 			<div class="character"></div>
 			<div class="character"></div>
@@ -22,8 +21,14 @@
 			<div class="character"></div>
 			<div class="character"></div>
 		</div>
+		<button onclick="game.start()">Comenzar de Nuevo</button>
+		<button onclick="game.game2()">Juego 2</button>
 	</div>
 	<script src="character.js"></script>
-	<script src="game.js"></script>
+	<script src="gameES6Class.js"></script>
+	<script>
+		const game = new Game();
+		game.start()
+	</script>
 </body>
 </html>
