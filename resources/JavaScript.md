@@ -15,7 +15,7 @@ Son contenedores que nos permiten almacenar datos. No están asociadas directame
 
 ```javascript
 let foo = 42; // foo es un número
-foo = "bar"; // foo ahora es un string
+foo = 'bar'; // foo ahora es un string
 foo = true; // foo ahora es un booleano
 ```
 
@@ -34,20 +34,20 @@ typeof variableNoDeclarada; // 'undefined'
 
 ### 2.1 Primitivos
 
-2.1.1 Strings
+### 2.1.1 Strings
 
 Secuencia de carácteres usado para representar un texto, puedes usar comillas simples (''), comillas dobles (""), o backticks (``)
 
 ```javascript
-const nombre = "Ana";
-const apellido = "Sosa";
+const nombre = 'Ana';
+const apellido = 'Sosa';
 ```
 
-2.1.2 Números
+### 2.1.2 Números
 
 Usado para representar o manipular números: `3` ó `-3` ó `3.7` ó `Infinity`
 
-2.1.3 Booleanos
+### 2.1.3 Booleanos
 
 Solo puede tener como valor `true` o `false`
 
@@ -55,24 +55,24 @@ Solo puede tener como valor `true` o `false`
 const esMayorDeEdad = true;
 ```
 
-2.1.4 Undefined
+### 2.1.4 Undefined
 
 Cuando declaro una variable y no le asigno un valor y deseo llamar a la variable el resultado será `undefined`
 
 ```javascript
 let a;
 var b;
-console.log("El valor de a es:", a); // El valor de a es: undefined
-console.log("El valor de b es:", b); // El valor de b es: undefined
+console.log('El valor de a es:', a); // El valor de a es: undefined
+console.log('El valor de b es:', b); // El valor de b es: undefined
 ```
 
-2.1.5 Null
+### 2.1.5 Null
 
 Sirve para determinar la ausencia de valor
 
 ![null vs undefined](imgs/nullvsundefined.jpeg)
 
-2.1.6 Symbol
+### 2.1.6 Symbol
 
 Lo usamos para crear valores irrepetibles, incluso al hacer la comparación obtendremos false como resultado ya que no son iguales
 
@@ -81,7 +81,7 @@ Symbol() === Symbol(); // false
 Symbol(11) === Symbol(11); // false
 ```
 
-2.1.7 BigInit
+### 2.1.7 BigInit
 
 Nos permite asignar un número entero en formato de precisión arbitraria, se le debe poner un n al final para indidicar que es un BigInit, las operaciones aritmeticas solo es posible hacerlas si los dos tipos de datos son BigInit.
 
@@ -94,17 +94,55 @@ const numero2 = BigInt(11);
 
 > Todos los primitivos son inmutables, es decir, no se pueden modificar.
 
-2.2 No Primitivos (mutables)
+## 2.2 No Primitivos (mutables)
 
-2.2.1 Objetos
+### 2.2.1 Objetos
 
 Es un contenedor de propiedades, cada propiedad tiene un nombre y un valor.
 
-2.2.1.2 Arrays
+### 2.2.2 Arrays
 
 Son una colección de datos.
 
-2.2.2 Función
+Algunas operaciones que le podemos realizar a nuestros arrays
+
+```javascript
+[1, 2, 3].map(n => n * 2);
+
+['🍓', '🥑', '🥩'].filter(food => food !== '🥩');
+
+['🐥', '🐯', '🐔', '🐷'].find(animal => animal === '🐔');
+
+['🐥', '🐯', '🐔', '🐷'].findIndex(animal => animal === '🐔');
+
+Array(3).fill('💸');
+
+['✅', '✅', '❌', '✅', '✅'].every(element => element === '✅');
+
+['✅', '✅', '❌', '✅', '✅'].some(element => element === '❌');
+
+[
+  {
+    name: 'Dev 1',
+    years: 3,
+  },
+  {
+    name: 'Dev 2',
+    years: 5,
+  },
+].reduce((accumulator, dev) => accumulator + dev.years, 0);
+
+const users = [
+  { nombre: 'ana', edad: 25 },
+  { nombre: 'Pedro', edad: 26 },
+];
+const findAna = user => user.nombre === 'ana';
+const user = users.find(findAna);
+console.log('Edad de Ana:', user.edad);
+```
+
+### 2.2.2 Función
+
 Es un fragmento de código que puede ser llamado por otro código o por sí misma (recursividad)
 
 ```javascript
