@@ -1,5 +1,6 @@
 const myApp = document.getElementById('app');
 const productsContainer = document.createElement('div');
+let products = [];
 
 const createProductHtml = ({ price, name, image }) => {
   const productContainer = document.createElement('div');
@@ -26,10 +27,30 @@ const productsHTML = (products = []) => {
   });
 };
 
-const init = () => {
-  productsContainer.classList.add('productsContainer');
-  myApp.append(productsContainer);
-  productsHTML(products);
+const getServerData = async url => {
+  const response = await fetch(url);
+
+  if (response.ok) {
+    return response.json();
+  } else {
+    throw Error(response.status);
+  }
+};
+
+const init = async () => {
+  try {
+    products = await getServerData(
+      'https://anamariasosam.github.io/productsAPI/products.json'
+    );
+    productsContainer.classList.add('productsContainer');
+    myApp.append(productsContainer);
+    productsHTML(products);
+  } catch (e) {
+    const error = document.createElement('p');
+    error.innerText = `${e} - No fue posible obtener los productos`;
+    document.querySelector('.filterAndSearch').style.display = 'none';
+    myApp.append(error);
+  }
 };
 
 const filterAndSort = {

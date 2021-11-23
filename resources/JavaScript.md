@@ -158,3 +158,47 @@ typeof saludar2; // 'function'
 typeof despedirse; // 'function'
 typeof (() => {}); // 'function'
 ```
+
+## Glosario
+
+### Funciones puras
+
+No cambian el valor de sus parámetros
+
+### Callback
+
+Es una función que se le pasa como parámetro a otra función
+
+### == vs ===
+
+- == : Igualdad débil, se convierten ambos datos a un tipo común ejecutando un algoritmo de comparasión.
+- === : Igualdad estricta, no se convierten
+  ![Igualidad Estricta](imgs/igualdad_estricta.png)
+
+```javascript
+window.app == null;
+'si' == 'si';
+'talvez' == ' talvez';
+'null' == null;
+null == 'null';
+undefined == 0;
+null == 0;
+null == undefined;
+2 == '2';
+'' == [];
+'' == {};
+```
+
+### Mutabilidad
+
+En JavaScript todos los strings son inmutables (no pueden ser modificados). Todos los métodos sobre los strings devuelven nuevos strings.
+
+Los arreglos y objetos, por otro lado, son mutables (se pueden modificar).
+
+### Scope
+
+El alcanze que tengo de una variable en algún punto de ejecución de mi código.
+
+### Hoisting
+
+El comportamiento por defecto de JavaScript en el que la declaración de variables y funciones se mueve automáticamente al principio del scope
