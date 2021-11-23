@@ -139,15 +139,6 @@
   <tr/>
   <tr>
     <td align="center">
-      <a href="profiles/diego-santana.md">
-        <img src="https://avatars.githubusercontent.com/u/93043227?v=4" width="100px;" alt=""/>
-        <br />
-        <sub><b>Diego Santana</b></sub>
-      </a>
-      <br />
-      <span>♏️ 🍱 📸 🛫</span>
-    </td>
-    <td align="center">
       <a href="profiles/manuel-baella.md">
         <img src="https://avatars.githubusercontent.com/u/63432814?s=400&u=619f04a36b53efce4d79bd2fc1be171b24f4235d&v=4" width="100px;" alt=""/>
         <br />
@@ -179,7 +170,7 @@
 
 ## Equipos proyecto grupal
 
-1. Nicolás, Martin, Diego y Gabriel
+1. Nicolás, Martin y Gabriel
 2. Luis, Jimena, Jorge y David
 3. Lorena, Jhon, Esteban y Manuel
 4. Jaime, Brigitte, Renzo y Erick
