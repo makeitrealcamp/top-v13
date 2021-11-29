@@ -13,3 +13,4 @@
 |   1    | 22 de Nov      | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-11-23/hJIdjBvjB.mp4)                               | [Product List](projects/product-list) |
 |   1    | 23 de Nov      | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-11-24/NRAWunMKa.mp4)                               | n/a                                   |
 |   1    | 24 de Nov      | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-11-25/WlYjOJWbi.mp4)                               | n/a                                   |
+|   1    | 26 de Nov      | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-11-27/Cb6jMNLs2.mp4)                               | [NodeJS Cli](projects/nodejs-cli)     |
