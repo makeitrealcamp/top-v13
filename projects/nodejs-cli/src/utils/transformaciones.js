@@ -1,4 +1,4 @@
-const duplicar = (arr) => arr.map((numero) => numero * 2)
+const duplicar = (arr) => arr?.map((numero) => numero * 2) ?? 'No hay array'
 
 const mayor = (arr) => Math.max(...arr)
 
