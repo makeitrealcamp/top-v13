@@ -1,5 +1,9 @@
 # Blog Layout
 
+![Blog Layout](blogTheme1.png)
+
+![Blog Layout](blogTheme2.png)
+
 1. Crear el layout del blog utilizando HTML semántico, para el banner de arriba puedes utilizar flexbox. 
 2. Fuente: [Lato](https://fonts.google.com/specimen/Lato)
 3. Imágenes: Dentro de la carpeta [images/](/images)
