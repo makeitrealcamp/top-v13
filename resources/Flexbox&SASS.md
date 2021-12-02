@@ -8,18 +8,20 @@ Es una forma de distribuir y alinear los elementos de un contenedor. Cuando le a
 
 Es un pre-procesador de CSS. Sabemos que CSS no es un lenguaje de programación pero con SASS podremos hacer que nuestro archivo de estilos pueda tener funciones, ciclos, variables, archivos en partes.
 
+[https://sass-lang.com/guide](https://sass-lang.com/guide)
+
 Pasos:
 
 ## 1. Añadir la librería
 
-`npm install node-sass --save`
+`npm install sass --save`
 
 ## 2. Añadir el script
 
-`"compile:sass": "node-sass scss/style.scss css/style.css"`
+`"compile:sass": "sass scss/style.scss css/style.css"`
 
 ## 3. Para que escuche nuestros cambios
 
-`"scss": "node-sass --watch scss -o css"`
+`"scss": "sass --watch scss -o css"`
 
 Instalar [live server]https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
