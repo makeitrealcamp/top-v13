@@ -1,0 +1,50 @@
+html {
+  font-size: 32px;
+}
+
+.wrapper {
+  padding: 100px 10%;
+  background-color: aqua;
+  height: 100vh;
+  font-size: 16px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+p:first-child {
+  font-size: 1em;
+}
+
+p:nth-child(2) {
+  font-size: 24px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .wrapper {
+    background-color: blue;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .wrapper {
+    background-color: red;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .wrapper {
+    background-color: yellow;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .wrapper {
+    background-color: green;
+  }
+}
