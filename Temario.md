@@ -21,3 +21,4 @@
 |   2    | 3 de Dic       | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-04/KvZVGLQXf.mp4)                               | n/a                                       |
 |   2    | 6 de Dic       | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-07/EW2ZuHNUh.mp4)                               | n/a                                       |
 |   2    | 7 de Dic       | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-08/q7alcEyxn.mp4)                               | n/a                                       |
+|   2    | 9 de Dic       | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-10/eZXRTOkR7.mp4)                               | n/a                                       |
