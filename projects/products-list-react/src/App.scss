@@ -20,13 +20,15 @@ body {
   background-color: rgb(0, 0, 0);
   color: #fff;
   text-align: center;
+
+  &__image {
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+  }
 }
 
-.product__image {
-  margin: 0;
-  padding: 0;
-  font-size: 80px;
-}
+
 
 .filterAndSearch {
   display: flex;

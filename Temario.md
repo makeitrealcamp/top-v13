@@ -22,4 +22,5 @@
 |   2    | 6 de Dic       | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-07/EW2ZuHNUh.mp4)                               | n/a                                                |
 |   2    | 7 de Dic       | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-08/WYqVQFrCv.mp4)                               | n/a                                                |
 |   2    | 9 de Dic       | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-10/eZXRTOkR7.mp4)                               | n/a                                                |
-|   2    | 10 de Dic      | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-11/zReHAO2pr.mp4)                               | [Product List React](projects/products-list-react) |
+|   3    | 10 de Dic      | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-11/zReHAO2pr.mp4)                               | [Product List React](projects/products-list-react) |
+|   3    | 13 de Dic      | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-14/1tjz9YP-l.mp4)                               | [Pokedex React](projects/pokedex)                  |

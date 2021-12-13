@@ -1,0 +1,19 @@
+.card {
+  &__container {
+    margin: 10px;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    min-width: 200px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__figure {
+    margin: 0;
+    padding: 0;
+  }
+}

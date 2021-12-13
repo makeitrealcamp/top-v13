@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import './App.css';
+import './App.scss';
+import Product from './components/Product.jsx'
 import productsMock from './products.json';
 
 const filterAndSort = (products, color) => {
@@ -23,15 +24,7 @@ const filterAndSort = (products, color) => {
   };
 };
 
-const Product = ({ product: { name, image, price } }) => {
-  return (
-    <div className="product">
-      <p className="product__image">{image}</p>
-      <p>${price}</p>
-      <p>{name.toUpperCase()}</p>
-    </div>
-  );
-};
+
 
 const App = () => {
   // hook utilizado useState
@@ -80,7 +73,7 @@ const App = () => {
 
       <div className="productsContainer">
         {products.map(product => (
-          <Product product={product} key={product.name.replace(' ', '')} />
+          <Product product={product}  key={product.name.replace(' ', '')} />
         ))}
       </div>
     </div>
