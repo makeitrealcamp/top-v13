@@ -5,7 +5,7 @@ import Card from '../card/Card';
 
 const Pokemon = () => {
   const { pokemonId } = useParams();
-  const [pokemon, setPokemon] = useState([]);
+  const [pokemon, setPokemon] = useState();
 
   const getPokemonsFromApi = async () => {
     const response = await fetch(

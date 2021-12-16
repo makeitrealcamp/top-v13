@@ -1,0 +1,10 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.app__input {
+  margin: 10px 0;
+}
