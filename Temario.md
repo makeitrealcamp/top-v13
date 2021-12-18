@@ -26,3 +26,5 @@
 |   3    | 13 de Dic      | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-14/1tjz9YP-l.mp4)                               | [Pokedex React](projects/pokedex)                  |
 |   3    | 14 de Dic      | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-15/s7GkYD3Yf.mp4)                               | n/a                                                |
 |   3    | 15 de Dic      | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-16/QtSIK_3jb.mp4)                               | [React games](projects/games)                      |
+|   3    | 16 de Dic      | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-17/Vaq5__yBO.mp4)                               | n/a                                                |
+|   3    | 17 de Dic      | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2021-12-18/u97t-7CO5.mp4)                               | [React games](projects/games)                      |

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import './EmojiGenerator.css';
 
 const emojiDictionary = {
   banano: '🍌',
@@ -13,25 +13,25 @@ const transformTextToEmoji = text =>
     .map(word => emojiDictionary[word] ?? word)
     .join(' ');
 
-const App = () => {
+const EmojiGenerator = () => {
   const [color, setColor] = useState('blue');
-  const [text, setText] = useState('Nuevo text');
+  const [text, setText] = useState('Quiero manzana');
 
   const onTextAreaChange = e => {
     setText(e.target.value);
   };
 
   return (
-    <div className="app">
+    <div className="emojiGenerator">
       <textarea
         value={text}
-        className="app__input"
+        className="emojiGenerator__input"
         cols="30"
         rows="10"
         onChange={onTextAreaChange}
       ></textarea>
       <input
-        className="app__input"
+        className="emojiGenerator__input"
         type="text"
         value={color}
         onChange={e => setColor(e.target.value)}
@@ -41,4 +41,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default EmojiGenerator;

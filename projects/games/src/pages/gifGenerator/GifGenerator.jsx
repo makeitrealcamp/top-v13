@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './_GifGenerator.css';
 
 const GifGenerator = () => {
@@ -17,6 +17,20 @@ const GifGenerator = () => {
     setGifs(response.data.data);
   };
 
+  const handleTrendingGifs = async () => {
+    const response = await axios.get('https://api.giphy.com/v1/gifs/trending', {
+      params: {
+        api_key: process.env.REACT_APP_GIPHY_KEY_NAME,
+        limit: 10,
+      },
+    });
+    setGifs(response.data.data);
+  };
+
+  useEffect(() => {
+    handleTrendingGifs()
+  }, []);
+
   return (
     <div className="gifGenerator">
       <div className="gifGenerator__search">
@@ -26,7 +40,7 @@ const GifGenerator = () => {
 
       <div className="gifs">
         {gifs.map(({ images, id }) => {
-          return <img src={images.fixed_height_small.url} alt="" key={id} />;
+          return <img src={images.fixed_height.url} alt="" key={id} />;
         })}
       </div>
     </div>

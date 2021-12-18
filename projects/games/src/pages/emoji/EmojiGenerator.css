@@ -1,10 +1,10 @@
-.app {
+.emojiGenerator {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 90%;
   margin: 20px auto;
 }
 
-.app__input {
+.emojiGenerator__input {
   margin: 10px 0;
 }
