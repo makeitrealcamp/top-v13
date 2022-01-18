@@ -1,6 +1,10 @@
 import { Card, CardContent, Typography, Grid } from '@mui/material';
+import { useContext } from 'react';
+import { CandidatosContext } from '../utils/CandidatosContext';
 
-export const Escrutinio = ({ candidatos }) => {
+export const Escrutinio = () => {
+  const { candidatos } = useContext(CandidatosContext);
+
   return (
     <Grid item xs={12} md={6}>
       <Card>
@@ -11,7 +15,7 @@ export const Escrutinio = ({ candidatos }) => {
             {candidatos.map(candidato => (
               <Grid item xs={12} md={4} key={candidato.nombre}>
                 <Typography variant="h3">{candidato.votos}</Typography>
-                <Typography  variant="h5" color="text.secondary" >
+                <Typography variant="h5" color="text.secondary">
                   {candidato.nombre}
                 </Typography>
               </Grid>

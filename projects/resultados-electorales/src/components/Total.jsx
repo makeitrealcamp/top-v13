@@ -1,6 +1,9 @@
 import { Card, CardContent, Grid, Typography } from '@mui/material';
+import { useContext } from 'react';
+import { CandidatosContext } from '../utils/CandidatosContext';
 
-export const Total = ({ candidatos }) => {
+export const Total = () => {
+  const { candidatos } = useContext(CandidatosContext);
   const total = candidatos.reduce(
     (accumulator, candidato) => accumulator + candidato.votos,
     0

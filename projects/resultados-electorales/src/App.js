@@ -1,14 +1,12 @@
-import { useState } from 'react';
 import { Elecciones } from './pages/Elecciones';
+import { CandidatosProvider } from './utils/CandidatosContext';
 
 function App() {
-  const [candidatos, setCandidatos] = useState([
-    { nombre: 'Hugo', votos: 0 },
-    { nombre: 'Paco', votos: 0 },
-    { nombre: 'Luis', votos: 0 },
-  ]);
-
-  return <Elecciones candidatos={candidatos} setCandidatos={setCandidatos} />;
+  return (
+    <CandidatosProvider>
+      <Elecciones />
+    </CandidatosProvider>
+  );
 }
 
 export default App;
