@@ -1,4 +1,5 @@
-import { createContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
+import { NotificacionesContext } from './NotificacionesContext';
 
 export const CandidatosContext = createContext();
 
@@ -8,6 +9,7 @@ export const CandidatosProvider = ({ children }) => {
     { nombre: 'Paco', votos: 0 },
     { nombre: 'Luis', votos: 0 },
   ]);
+  const { setNotificacion } = useContext(NotificacionesContext);
 
   const votar = votarPor => {
     const nuevosVotos = votarPor.votos + 1;
@@ -25,8 +27,18 @@ export const CandidatosProvider = ({ children }) => {
     setCandidatos(nuevos);
   };
 
+  const nuevoCandidato = candidato => {
+    if (candidato !== null) {
+      setCandidatos(oldCandidatos => [
+        ...oldCandidatos,
+        { nombre: `${candidato.firstName} ${candidato.lastName}`, votos: 0 },
+      ]);
+      setNotificacion('Candidato añadido');
+    }
+  };
+
   return (
-    <CandidatosContext.Provider value={{ candidatos, votar }}>
+    <CandidatosContext.Provider value={{ candidatos, votar, nuevoCandidato }}>
       {children}
     </CandidatosContext.Provider>
   );

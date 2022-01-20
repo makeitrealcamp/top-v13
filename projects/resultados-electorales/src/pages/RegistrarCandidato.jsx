@@ -11,7 +11,7 @@ import { useContext, useState } from 'react';
 import { CandidatosContext } from '../utils/CandidatosContext';
 
 export const RegistrarCandidato = () => {
-  const [candidato, setCandidato] = useState({});
+  const [candidato, setCandidato] = useState(null);
   const { nuevoCandidato } = useContext(CandidatosContext);
 
   const onInputChange = inputName => inputValue => {
