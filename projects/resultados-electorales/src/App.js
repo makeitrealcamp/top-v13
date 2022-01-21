@@ -1,15 +1,17 @@
 import { Elecciones } from './pages/Elecciones';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { CandidatosProvider } from './utils/CandidatosContext';
+import { Provider } from 'react-redux';
 import { Navbar } from './components/NavBar';
 import { Box } from '@mui/material';
 import { RegistrarCandidato } from './pages/RegistrarCandidato';
 import './_App.css';
 import { NotificacionesProvider } from './utils/NotificacionesContext';
+import store from './redux';
+
 function App() {
   return (
-    <NotificacionesProvider>
-      <CandidatosProvider>
+    <Provider store={store}>
+      <NotificacionesProvider>
         <BrowserRouter>
           <Navbar />
           <Box
@@ -23,8 +25,8 @@ function App() {
             </Routes>
           </Box>
         </BrowserRouter>
-      </CandidatosProvider>
-    </NotificacionesProvider>
+      </NotificacionesProvider>
+    </Provider>
   );
 }
 

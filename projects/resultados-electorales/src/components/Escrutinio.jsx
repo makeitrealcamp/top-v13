@@ -1,9 +1,8 @@
 import { Card, CardContent, Typography, Grid } from '@mui/material';
-import { useContext } from 'react';
-import { CandidatosContext } from '../utils/CandidatosContext';
+import { useSelector } from 'react-redux';
 
 export const Escrutinio = () => {
-  const { candidatos } = useContext(CandidatosContext);
+  const candidatos = useSelector(state => state.candidatos.candidatos);
 
   return (
     <Grid item xs={12} md={6}>
@@ -13,7 +12,7 @@ export const Escrutinio = () => {
 
           <Grid container item spacing={2}>
             {candidatos.map(candidato => (
-              <Grid item xs={12} md={4} key={candidato.nombre}>
+              <Grid item xs={4} md={4} key={candidato.nombre}>
                 <Typography variant="h3">{candidato.votos}</Typography>
                 <Typography variant="h5" color="text.secondary">
                   {candidato.nombre}

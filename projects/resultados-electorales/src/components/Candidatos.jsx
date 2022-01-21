@@ -6,11 +6,12 @@ import {
   Typography,
   Card,
 } from '@mui/material';
-import { useContext } from 'react';
-import { CandidatosContext } from '../utils/CandidatosContext';
+import { useDispatch, useSelector } from 'react-redux';
+import { votar } from '../redux/features/candidatosSlice';
 
 export const Candidatos = () => {
-  const { candidatos, votar } = useContext(CandidatosContext);
+  const candidatos = useSelector(state => state.candidatos.candidatos);
+  const dispatch = useDispatch();
 
   return (
     <Grid container item spacing={2}>
@@ -22,7 +23,10 @@ export const Candidatos = () => {
                 <Typography>{candidato.nombre}</Typography>
               </CardContent>
               <CardActions>
-                <Button size="medium" onClick={() => votar(candidato)}>
+                <Button
+                  size="medium"
+                  onClick={() => dispatch(votar(candidato))}
+                >
                   Votar
                 </Button>
               </CardActions>
