@@ -14,7 +14,7 @@ export const Candidatos = () => {
   const dispatch = useDispatch();
 
   return (
-    <Grid container item spacing={2}>
+    <Grid container item spacing={2} xs={12} md={12}>
       {candidatos.map((candidato, index) => {
         return (
           <Grid item xs={4} md={4} key={candidato.nombre}>

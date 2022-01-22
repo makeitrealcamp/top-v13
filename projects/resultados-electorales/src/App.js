@@ -7,6 +7,8 @@ import { RegistrarCandidato } from './pages/RegistrarCandidato';
 import './_App.css';
 import { NotificacionesProvider } from './utils/NotificacionesContext';
 import store from './redux';
+import { CandidatosList } from './pages/Candidatos';
+import { Votar } from './pages/Votar';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Routes>
               <Route index element={<Elecciones />}></Route>
               <Route path="registrar" element={<RegistrarCandidato />} />
+              <Route path="candidatos" element={<CandidatosList />} />
+              <Route path="votar" element={<Votar />} />
             </Routes>
           </Box>
         </BrowserRouter>

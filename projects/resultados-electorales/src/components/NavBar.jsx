@@ -13,12 +13,20 @@ import { useState } from 'react';
 
 const pages = [
   {
+    title: 'Dashboard',
+    id: '',
+  },
+  {
     title: 'Registrar Candidato',
     id: 'registrar',
   },
   {
-    title: 'Elecciones',
-    id: '',
+    title: 'Candidatos',
+    id: 'candidatos',
+  },
+  {
+    title: 'Votar',
+    id: 'votar',
   },
 ];
 

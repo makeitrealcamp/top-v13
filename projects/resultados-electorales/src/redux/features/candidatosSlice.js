@@ -34,6 +34,7 @@ export const candidatosSlice = createSlice({
         state.candidatos.push({
           nombre: `${candidato.firstName} ${candidato.lastName}`,
           votos: 0,
+          propuestas: candidato.propuestas,
         });
       }
     },
