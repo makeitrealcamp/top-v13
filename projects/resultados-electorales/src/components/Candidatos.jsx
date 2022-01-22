@@ -15,7 +15,7 @@ export const Candidatos = () => {
 
   return (
     <Grid container item spacing={2}>
-      {candidatos.map(candidato => {
+      {candidatos.map((candidato, index) => {
         return (
           <Grid item xs={4} md={4} key={candidato.nombre}>
             <Card>
@@ -23,10 +23,7 @@ export const Candidatos = () => {
                 <Typography>{candidato.nombre}</Typography>
               </CardContent>
               <CardActions>
-                <Button
-                  size="medium"
-                  onClick={() => dispatch(votar(candidato))}
-                >
+                <Button size="medium" onClick={() => dispatch(votar(index))}>
                   Votar
                 </Button>
               </CardActions>

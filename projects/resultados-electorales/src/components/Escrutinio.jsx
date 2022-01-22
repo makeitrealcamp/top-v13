@@ -1,8 +1,8 @@
 import { Card, CardContent, Typography, Grid } from '@mui/material';
-import { useSelector } from 'react-redux';
+import { connect, useSelector } from 'react-redux';
 
-export const Escrutinio = () => {
-  const candidatos = useSelector(state => state.candidatos.candidatos);
+export const Escrutinio = ({ candidatos }) => {
+  // const candidatos = useSelector(state => state.candidatos.candidatos);
 
   return (
     <Grid item xs={12} md={6}>
@@ -25,3 +25,11 @@ export const Escrutinio = () => {
     </Grid>
   );
 };
+
+const mapStateToProps = state => {
+  return {
+    candidatos: state.candidatos.candidatos,
+  };
+};
+
+export default connect(mapStateToProps, null)(Escrutinio);

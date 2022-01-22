@@ -7,13 +7,13 @@ import {
   Typography,
 } from '@mui/material';
 import { Box } from '@mui/system';
-import { useContext, useState } from 'react';
-import { CandidatosContext } from '../utils/CandidatosContext';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { nuevoCandidato } from '../redux/features/candidatosSlice';
 
 export const RegistrarCandidato = () => {
   const [candidato, setCandidato] = useState(null);
-  const { nuevoCandidato } = useContext(CandidatosContext);
-
+  const dispatch = useDispatch();
   const onInputChange = inputName => inputValue => {
     setCandidato({ ...candidato, [inputName]: inputValue.target.value });
   };
@@ -37,7 +37,7 @@ export const RegistrarCandidato = () => {
           noValidate
           onSubmit={e => {
             e.preventDefault();
-            nuevoCandidato(candidato);
+            dispatch(nuevoCandidato(candidato));
           }}
           sx={{ mt: 3 }}
         >
