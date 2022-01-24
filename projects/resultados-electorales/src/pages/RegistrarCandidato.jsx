@@ -5,16 +5,17 @@ import {
   Grid,
   TextField,
   Typography,
-} from '@mui/material';
-import { Box } from '@mui/system';
-import { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { nuevoCandidato } from '../redux/features/candidatosSlice';
+} from "@mui/material";
+import { Box } from "@mui/system";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { crearCandidato } from "../redux/features/candidatosSlice";
 
 export const RegistrarCandidato = () => {
   const [candidato, setCandidato] = useState(null);
   const dispatch = useDispatch();
-  const onInputChange = inputName => inputValue => {
+
+  const onInputChange = (inputName) => (inputValue) => {
     setCandidato({ ...candidato, [inputName]: inputValue.target.value });
   };
 
@@ -24,9 +25,9 @@ export const RegistrarCandidato = () => {
       <Box
         sx={{
           marginTop: 8,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
         <Typography component="h1" variant="h5">
@@ -35,16 +36,16 @@ export const RegistrarCandidato = () => {
         <Box
           component="form"
           noValidate
-          onSubmit={e => {
+          onSubmit={(e) => {
             e.preventDefault();
-            dispatch(nuevoCandidato(candidato));
+            dispatch(crearCandidato(candidato));
           }}
           sx={{ mt: 3 }}
         >
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
-                onChange={onInputChange('firstName')}
+                onChange={onInputChange("firstName")}
                 name="firstName"
                 required
                 fullWidth
@@ -55,7 +56,7 @@ export const RegistrarCandidato = () => {
             </Grid>
             <Grid item xs={12} sm={6}>
               <TextField
-                onChange={onInputChange('lastName')}
+                onChange={onInputChange("lastName")}
                 required
                 fullWidth
                 id="lastName"
@@ -65,7 +66,7 @@ export const RegistrarCandidato = () => {
             </Grid>
             <Grid item xs={12} sm={12}>
               <TextField
-                onChange={onInputChange('propuestas')}
+                onChange={onInputChange("propuestas")}
                 required
                 fullWidth
                 multiline

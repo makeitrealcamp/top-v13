@@ -1,9 +1,10 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
+import { crearNotificacion } from "./notificacionesSlice";
 
 const votarPorCandidato = (candidatos, votarPor) => {
   const nuevosVotos = votarPor.votos + 1;
 
-  return candidatos.map(candidato => {
+  return candidatos.map((candidato) => {
     if (candidato.nombre === votarPor.nombre) {
       return {
         ...candidato,
@@ -14,13 +15,13 @@ const votarPorCandidato = (candidatos, votarPor) => {
   });
 };
 
-export const candidatosSlice = createSlice({
-  name: 'candidatos',
+const candidatosSlice = createSlice({
+  name: "candidatos",
   initialState: {
     candidatos: [
-      { nombre: 'Hugo', votos: 0 },
-      { nombre: 'Paco', votos: 0 },
-      { nombre: 'Luis', votos: 0 },
+      { nombre: "Hugo", votos: 0 },
+      { nombre: "Paco", votos: 0 },
+      { nombre: "Luis", votos: 0 },
     ],
   },
   reducers: {
@@ -30,17 +31,37 @@ export const candidatosSlice = createSlice({
       state.candidatos[candidatoIndex].votos += 1;
     },
     nuevoCandidato: (state, { payload: candidato }) => {
-      if (candidato !== null) {
-        state.candidatos.push({
-          nombre: `${candidato.firstName} ${candidato.lastName}`,
-          votos: 0,
-          propuestas: candidato.propuestas,
-        });
-      }
+      state.candidatos.push({
+        nombre: `${candidato.firstName} ${candidato.lastName}`,
+        votos: 0,
+        propuestas: candidato.propuestas,
+      });
     },
   },
 });
 
 export const { votar, nuevoCandidato } = candidatosSlice.actions;
+
+const candidatoEsValido = (candidato) => {
+  return candidato !== null;
+};
+
+export const crearCandidato = (candidato) => async (dispatch) => {
+  if (candidatoEsValido(candidato)) {
+    dispatch(nuevoCandidato(candidato));
+    dispatch(
+      crearNotificacion({
+        mensaje: `Candidato ${candidato.firstName} ${candidato.lastName} creado`,
+      })
+    );
+  } else {
+    dispatch(
+      crearNotificacion({
+        mensaje: "Error creando al candidato",
+        severity: "error",
+      })
+    );
+  }
+};
 
 export default candidatosSlice.reducer;

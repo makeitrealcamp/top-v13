@@ -1,5 +1,5 @@
-import Escrutinio from './Escrutinio';
-import { Total } from './Total';
+import Escrutinio from '../components/Escrutinio';
+import { Total } from '../components/Total';
 
 export const Resumen = () => {
   return (

@@ -1,12 +1,12 @@
-import { useSelector } from 'react-redux';
-import { Card, CardContent, Grid, Typography } from '@mui/material';
+import { useSelector } from "react-redux";
+import { Card, CardContent, Grid, Typography } from "@mui/material";
 
 export const CandidatosList = () => {
-  const candidatos = useSelector(state => state.candidatos.candidatos);
+  const candidatos = useSelector((state) => state.candidatos.candidatos);
 
   return (
-    <Grid item container xs={12} md={12} spacing={2}>
-      {candidatos.map(candidato => (
+    <>
+      {candidatos.map((candidato) => (
         <Grid item xs={6} md={4} key={candidato.nombre}>
           <Card>
             <CardContent>
@@ -14,7 +14,7 @@ export const CandidatosList = () => {
                 {candidato.nombre}
               </Typography>
               <Typography variant="h5" gutterBottom>
-                {candidato.propuestas || 'No tiene propuestas 😢'}
+                {candidato.propuestas || "No tiene propuestas 😢"}
               </Typography>
               <Typography variant="h6" color="text.secondary" gutterBottom>
                 Votos: {candidato.votos}
@@ -23,6 +23,6 @@ export const CandidatosList = () => {
           </Card>
         </Grid>
       ))}
-    </Grid>
+    </>
   );
 };
