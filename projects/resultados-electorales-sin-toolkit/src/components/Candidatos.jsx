@@ -5,18 +5,17 @@ import {
   CardContent,
   Typography,
   Card,
-} from '@mui/material';
-import { useDispatch, useSelector } from 'react-redux';
-import { votar } from '../redux/features/candidatosSlice';
-import { crearNotificacion } from '../redux/features/notificacionesSlice';
+} from "@mui/material";
+import { connect, useSelector } from "react-redux";
+import { votar } from "../redux/action-creators/candidatos";
+import { crearNotificacion } from "../redux/action-creators/notificaciones";
 
-export const Candidatos = () => {
-  const candidatos = useSelector(state => state.candidatos.candidatos) || [];
-  const dispatch = useDispatch();
+const Candidatos = ({ _votarPorCandidato }) => {
+  const candidatos = useSelector((state) => state.candidatos.candidatos);
 
   return (
     <Grid container item spacing={2} xs={12} md={12}>
-      {candidatos.map((candidato, index) => {
+      {candidatos.map((candidato) => {
         return (
           <Grid item xs={4} md={4} key={candidato.nombre}>
             <Card>
@@ -30,12 +29,7 @@ export const Candidatos = () => {
                 <Button
                   size="medium"
                   onClick={() => {
-                    dispatch(votar(index));
-                    dispatch(
-                      crearNotificacion({
-                        mensaje: `Acabas de votar por ${candidato.nombre}`,
-                      })
-                    );
+                    _votarPorCandidato(candidato);
                   }}
                 >
                   Votar
@@ -48,3 +42,17 @@ export const Candidatos = () => {
     </Grid>
   );
 };
+
+export const mapDispatchToProps = (dispatch) => ({
+  _votarPorCandidato: (candidato) => {
+    console.log("CANDIDATO", candidato);
+    dispatch(votar(candidato));
+    dispatch(
+      crearNotificacion({
+        mensaje: `Acabas de votar por ${candidato.nombre}`,
+      })
+    );
+  },
+});
+
+export default connect(null, mapDispatchToProps)(Candidatos);

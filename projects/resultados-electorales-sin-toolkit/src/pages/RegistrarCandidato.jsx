@@ -9,58 +9,37 @@ import {
 import { Box } from '@mui/system';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { nuevoCandidato } from '../redux/features/candidatosSlice';
-import { crearNotificacion } from '../redux/features/notificacionesSlice';
+import { nuevoCandidato } from '../redux/action-creators/candidatos';
+import { crearNotificacion } from '../redux/action-creators/notificaciones';
 
 const initialCandidato = {
-  nombre: '',
-  apellido: '',
+  firstName: '',
+  lastName: '',
   propuestas: '',
 };
 
 const candidatoEsValido = candidato => {
-  const validation = { isValid: true, formErrors: {} };
-
-  if (candidato.nombre === '') {
-    validation.isValid = false;
-    validation.formErrors.nombre = 'Nombre no puede ser vacío';
-  }
-
-  if (candidato.apellido === '') {
-    validation.isValid = false;
-    validation.formErrors.apellido = 'Apellido no puede ser vacío';
-  }
-
-  if (candidato.propuestas === '') {
-    validation.isValid = false;
-    validation.formErrors.propuestas = 'Propuestas no puede ser vacío';
-  }
-
-  return validation;
+  return candidato.firstName !== '' || candidato.lastName !== '';
 };
 
 export const RegistrarCandidato = () => {
   const [candidato, setCandidato] = useState(initialCandidato);
   const dispatch = useDispatch();
-  const [errors, setErrors] = useState({});
 
   const onInputChange = inputName => inputValue => {
     setCandidato({ ...candidato, [inputName]: inputValue.target.value });
   };
 
   const crearCandidato = candidato => {
-    const { isValid, formErrors } = candidatoEsValido(candidato);
-    if (isValid) {
+    if (candidatoEsValido(candidato)) {
       dispatch(nuevoCandidato(candidato));
       dispatch(
         crearNotificacion({
-          mensaje: `Candidato ${candidato.nombre} ${candidato.apellido} creado`,
+          mensaje: `Candidato ${candidato.firstName} ${candidato.lastName} creado`,
         })
       );
       setCandidato(initialCandidato);
-      setErrors({});
     } else {
-      setErrors(formErrors);
       dispatch(
         crearNotificacion({
           mensaje: 'Error creando al candidato',
@@ -93,38 +72,39 @@ export const RegistrarCandidato = () => {
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
-                onChange={onInputChange('nombre')}
-                name="nombre"
+                onChange={onInputChange('firstName')}
+                name="firstName"
+                required
                 fullWidth
-                value={candidato.nombre}
+                value={candidato.firstName}
+                id="firstName"
                 label="Nombre"
                 autoFocus
-                error={!!errors.nombre}
-                helperText={errors.nombre}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
               <TextField
-                onChange={onInputChange('apellido')}
-                name="apellido"
-                value={candidato.apellido}
+                onChange={onInputChange('lastName')}
+                value={candidato.lastName}
+                required
                 fullWidth
+                id="lastName"
                 label="Apellido"
-                error={!!errors.apellido}
-                helperText={errors.apellido}
+                name="lastName"
               />
             </Grid>
             <Grid item xs={12} sm={12}>
               <TextField
                 onChange={onInputChange('propuestas')}
-                name="propuestas"
                 value={candidato.propuestas}
+                required
                 fullWidth
                 multiline
                 rows={4}
+                id="propuestas"
                 label="Propuestas"
-                error={!!errors.propuestas}
-                helperText={errors.propuestas}
+                name="propuestas"
+                autoComplete="family-name"
               />
             </Grid>
           </Grid>

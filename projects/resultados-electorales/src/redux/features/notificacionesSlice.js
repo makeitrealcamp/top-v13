@@ -1,11 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const notificacionesSlice = createSlice({
-  name: "notificaciones",
+  name: 'notificaciones',
   initialState: {
     id: 0,
-    mensaje: "",
-    severity: "success",
+    mensaje: '',
+    severity: 'success',
   },
   reducers: {
     crearNotificacion: (state, { payload: notificacion }) => {
