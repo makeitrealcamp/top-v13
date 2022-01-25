@@ -22,12 +22,18 @@ export const Candidatos = () => {
             <Card>
               <CardContent>
                 <Typography variant="h3">{candidato.nombre}</Typography>
-                <Typography variant="h5" color="text.secondary">
+                <Typography
+                  variant="h5"
+                  color="text.secondary"
+                  data-testid={`votosDe${candidato.nombre}`}
+                >
                   Votos actuales: {candidato.votos}
                 </Typography>
               </CardContent>
               <CardActions>
                 <Button
+                  role="button"
+                  aria-label={`Votar por ${candidato.nombre}`}
                   size="medium"
                   onClick={() => {
                     dispatch(votar(index));

@@ -37,3 +37,4 @@
 |   4    | 19 de Enero    | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2022-01-20/TOBQTZWGt.mp4)                               | [Votos electorales](projects/resultados-electorales)      |
 |   4    | 20 de Enero    | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2022-01-21/3oUi25jha.mp4)                               |                                                           |
 |   4    | 21 de Enero    | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2022-01-22/55KAhAFcq.mp4)                               | [Votos electorales](projects/resultados-electorales)      |
+|   4    | 24 de Enero    | [Video](https://makeitreal.s3.amazonaws.com/videos/83861016190/2022-01-25/OiZgaZV5W.mp4)                               | [Votos electorales](projects/resultados-electorales)      |

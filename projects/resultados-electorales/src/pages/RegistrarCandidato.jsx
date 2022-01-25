@@ -18,22 +18,28 @@ const initialCandidato = {
   propuestas: '',
 };
 
+export const errors = {
+  nombre: 'Nombre no puede ser vacío',
+  apellido: 'Apellido no puede ser vacío',
+  propuestas: 'Propuestas no puede ser vacío',
+};
+
 const candidatoEsValido = candidato => {
   const validation = { isValid: true, formErrors: {} };
 
   if (candidato.nombre === '') {
     validation.isValid = false;
-    validation.formErrors.nombre = 'Nombre no puede ser vacío';
+    validation.formErrors.nombre = errors.nombre;
   }
 
   if (candidato.apellido === '') {
     validation.isValid = false;
-    validation.formErrors.apellido = 'Apellido no puede ser vacío';
+    validation.formErrors.apellido = errors.apellido;
   }
 
   if (candidato.propuestas === '') {
     validation.isValid = false;
-    validation.formErrors.propuestas = 'Propuestas no puede ser vacío';
+    validation.formErrors.propuestas = errors.propuestas;
   }
 
   return validation;
@@ -94,7 +100,7 @@ export const RegistrarCandidato = () => {
             <Grid item xs={12} sm={6}>
               <TextField
                 onChange={onInputChange('nombre')}
-                name="nombre"
+                // name="nombre"
                 fullWidth
                 value={candidato.nombre}
                 label="Nombre"
@@ -106,7 +112,7 @@ export const RegistrarCandidato = () => {
             <Grid item xs={12} sm={6}>
               <TextField
                 onChange={onInputChange('apellido')}
-                name="apellido"
+                // name="apellido"
                 value={candidato.apellido}
                 fullWidth
                 label="Apellido"
@@ -117,7 +123,7 @@ export const RegistrarCandidato = () => {
             <Grid item xs={12} sm={12}>
               <TextField
                 onChange={onInputChange('propuestas')}
-                name="propuestas"
+                // name="propuestas"
                 value={candidato.propuestas}
                 fullWidth
                 multiline
