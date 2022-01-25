@@ -10,7 +10,7 @@ export const Total = () => {
   );
 
   return (
-    <Grid item container xs={12} md={6} spacing={2}>
+    <>
       <Grid item xs={6} md={6}>
         <Card>
           <CardContent>
@@ -36,6 +36,6 @@ export const Total = () => {
           </CardContent>
         </Card>
       </Grid>
-    </Grid>
+    </>
   );
 };
