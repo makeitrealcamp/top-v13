@@ -42,5 +42,5 @@
 |   4    | 28 de Enero: Redux Thunk                  | [Video](https://makeitreal.s3.amazonaws.com/videos/83064569493/2022-01-29/FnZRX7nC0.mp4)                               | Local repository                                          |
 |   5    | 31 de Enero: SQL                          | [Video](https://makeitreal.s3.amazonaws.com/videos/83064569493/2022-02-01/eo1bETdcn.mp4)                               | Local repository                                          |
 |   5    | 2 de Febrero: NoSQL, MongoDB, Node.js     | [Video](https://makeitreal.s3.amazonaws.com/videos/83064569493/2022-02-03/pkWsWiYQx.mp4)                               | Local repository                                          |
-|   5    | 4 de Febrero: Construcción de Api parte 1 | [Video]()                                                                                                              | Pendiente                                                 |
-|  |
+|   5    | 4 de Febrero: Construcción de Api parte 1 | [Video](https://makeitreal.s3.amazonaws.com/videos/83064569493/2022-02-05/J044wwSPD.mp4)                               | [Api productos](projects/api-products)                    |
+|        |
