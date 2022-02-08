@@ -43,6 +43,6 @@
 |   5    | 31 de Enero: SQL                                          | [Video](https://makeitreal.s3.amazonaws.com/videos/83064569493/2022-02-01/eo1bETdcn.mp4)                               |                                                           |
 |   5    | 2 de Febrero: NoSQL, MongoDB, Node.js                     | [Video](https://makeitreal.s3.amazonaws.com/videos/83064569493/2022-02-03/pkWsWiYQx.mp4)                               | [Node base](projects/node-base)                           |
 |   5    | 4 de Febrero: Construcción de Api parte 1                 | [Video](https://makeitreal.s3.amazonaws.com/videos/83064569493/2022-02-05/J044wwSPD.mp4)                               | [Api productos](projects/api-products)                    |
-|        |
-|   5    | 7 de Febrero: Construcción de Api parte 2 (Próxima clase) | [Video]()                                                                                                              | [Api productos](projects/api-products)                    |
-|        |
+|   5    | 7 de Febrero: Construcción de Api parte 2                 | [Video](https://makeitreal.s3.amazonaws.com/videos/83064569493/2022-02-08/X1xd_iaKc.mp4)                               | [Api productos](projects/api-products)                    |
+|   5    | 9 de Febrero: Construcción de Api parte 3 (Próxima clase) | [Video]()                                                                                                              | [Api productos](projects/api-products)                    |
+|        |                                                           |

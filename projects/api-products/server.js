@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 
 import { productCtlr } from "./api/controllers/index.js";
+import { productRouter } from "./api/routes/index.js";
 
 const { getAllProducts, getOneProduct, createProduct } = productCtlr;
 
@@ -32,9 +33,7 @@ app.get("/", (request, response) => {
   response.send("API PRODUCTS");
 });
 
-app.get("/api/products", getAllProducts);
-app.get("/api/products/:id", getOneProduct);
-app.post("/api/products/create", createProduct);
+app.use("/api", productRouter);
 
 // Launch server
 app.listen(5000, () => {
