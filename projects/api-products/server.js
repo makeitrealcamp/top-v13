@@ -1,19 +1,13 @@
 import express from "express";
 import mongoose from "mongoose";
 
+import { productCtlr } from "./api/controllers/index.js";
+
+const { getAllProducts, getOneProduct, createProduct } = productCtlr;
+
 /**
  * Mongoose
  */
-
-// Schema products
-const schemaProducts = {
-  ref: String,
-  name: String,
-  description: String,
-};
-
-// Product model
-const Product = mongoose.model("Product", schemaProducts, "product");
 
 // Connect to db
 await mongoose.connect(
@@ -25,23 +19,22 @@ mongoose.connection.on("error", function (e) {
   console.error("ERROR: ", e);
 });
 
-// Controller get all products
-const getAllProducts = async (request, response) => {
-  const products = await Product.find();
-  response.json(products);
-};
-
 /**
  * Express
  */
 const app = express();
+
+// Middleware
+app.use(express.json());
 
 // Routes
 app.get("/", (request, response) => {
   response.send("API PRODUCTS");
 });
 
-app.get("/products", getAllProducts);
+app.get("/api/products", getAllProducts);
+app.get("/api/products/:id", getOneProduct);
+app.post("/api/products/create", createProduct);
 
 // Launch server
 app.listen(5000, () => {
