@@ -7,6 +7,7 @@ const {
   createProduct,
   updateProduct,
   deleteProduct,
+  findProduct,
 } = productCtlr;
 
 const router = express.Router();
@@ -22,7 +23,7 @@ const productRoutes = {
 router.get(productRoutes.GET_ALL, getAllProducts);
 router.get(productRoutes.GET_ONE, getOneProduct);
 router.post(productRoutes.CREATE, createProduct);
-router.put(productRoutes.UPDATE, updateProduct);
+router.put(productRoutes.UPDATE, findProduct, updateProduct);
 router.delete(productRoutes.DELETE, deleteProduct);
 
 export default router;
