@@ -1,8 +1,9 @@
 import express from "express";
 import mongoose from "mongoose";
+import "dotenv/config";
 
 import { productCtlr } from "./api/controllers/index.js";
-import { productRouter } from "./api/routes/index.js";
+import { productRouter, userRouter } from "./api/routes/index.js";
 
 const { getAllProducts, getOneProduct, createProduct } = productCtlr;
 
@@ -11,9 +12,8 @@ const { getAllProducts, getOneProduct, createProduct } = productCtlr;
  */
 
 // Connect to db
-await mongoose.connect(
-  "mongodb+srv://maria:Maria123@cluster0.0oz81.mongodb.net/product_db"
-);
+const dbConnection = process.env.DB_STRING_CONNECTION;
+await mongoose.connect(dbConnection);
 
 // Listener to connection error
 mongoose.connection.on("error", function (e) {
@@ -34,6 +34,7 @@ app.get("/", (request, response) => {
 });
 
 app.use("/api", productRouter);
+app.use("/api", userRouter);
 
 const PORT = process.env.PORT || 5000;
 
