@@ -1,32 +1,51 @@
-//TODO: When create CRUD of users
-//import { User } from "../models/index.js";
+import { User } from "../models/index.js";
 
+import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-const username = "maria";
-const passwd = "123";
+export const login = async (req, res) => {
+  const { email, password } = req.body;
 
-export const login = (req, res) => {
-  const { username: userLog, password: passLog } = req.body;
+  const user = await User.find({ email });
+  const userDB = user[0];
 
-  // Mocked user database
-  const userDb = {
-    id: "2138901274-120950-1",
-    name: "Maria Giraldo",
-  };
+  if (user.length === 0) res.status(403).send();
 
-  if (username === userLog && passwd === passLog) {
-    // JWT
-    jwt.sign(userDb, process.env.SECRET_KEY, (error, token) => {
-      if (!error) {
-        res.status(200).json({
-          token,
-        });
-      } else {
-        res.status(403).send();
-      }
-    });
-  } else {
-    res.status(403).send();
+  // Validate hash
+  const passToHash = `${password}${userDB.document}`;
+  bcrypt.compare(passToHash, userDB.password, (err, isPassValid) => {
+    if (email === userDB.email && isPassValid) {
+      jwt.sign(
+        { email: userDB.email },
+        process.env.SECRET_KEY,
+        (error, token) => {
+          if (!error) {
+            res.status(200).json({
+              token,
+            });
+          } else {
+            res.status(403).send();
+          }
+        }
+      );
+    } else {
+      res.status(403).send();
+    }
+  });
+};
+
+export const createUser = async (req, res) => {
+  const { password, document } = req.body;
+
+  const passToHash = `${password}${document}`;
+  const hash = await bcrypt.hash(passToHash, 10);
+
+  const newUser = new User({ ...req.body, password: hash });
+
+  try {
+    await newUser.save();
+    res.status(201).send();
+  } catch (err) {
+    res.status(500).send(err);
   }
 };
