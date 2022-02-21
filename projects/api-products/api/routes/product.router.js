@@ -22,6 +22,7 @@ const productRoutes = {
   DELETE: "/products/delete/:id",
 };
 
+//router.get(productRoutes.GET_ALL, validateToken, getAllProducts);
 router.get(productRoutes.GET_ALL, getAllProducts);
 router.get(productRoutes.GET_ONE, getOneProduct);
 router.post(productRoutes.CREATE, createProduct);

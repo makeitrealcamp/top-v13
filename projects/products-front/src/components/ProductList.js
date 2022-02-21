@@ -1,15 +1,30 @@
 import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Card } from "react-bootstrap";
+
+import { getAllProductsAsync, selectProducts } from "../slices/productSlices";
 
 const ProductList = () => {
+  const dispatch = useDispatch();
+  const products = useSelector(selectProducts);
+
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("DATA ", data);
-      });
+    dispatch(getAllProductsAsync());
   }, []);
 
-  return <div>PRODUCTOS!!!!</div>;
+  return (
+    <div>
+      {products &&
+        products.length > 0 &&
+        products.map((product) => (
+          <Card>
+            <Card.Body>
+              {product.name}: {product.price}
+            </Card.Body>
+          </Card>
+        ))}
+    </div>
+  );
 };
 
 export default ProductList;
