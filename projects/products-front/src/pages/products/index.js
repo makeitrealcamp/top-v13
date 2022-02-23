@@ -7,19 +7,26 @@ import CreateProduct from "../../components/CreateProduct";
 const ProductPage = () => {
   const [showCreateProduct, setShowCreateProduct] = useState(false);
 
-  const handleCreateProduct = () => {
+  const handleShowCreateProduct = () => {
     setShowCreateProduct(true);
+  };
+
+  const handleHideCreateProduct = () => {
+    setShowCreateProduct(false);
   };
 
   return (
     <Container>
       <Row>
         <Col lg={2}>
-          <Button onClick={handleCreateProduct}>Create product</Button>
+          <Button onClick={handleShowCreateProduct}>Create product</Button>
         </Col>
         <Col>
           <ProductList />
-          <CreateProduct show={showCreateProduct} />
+          <CreateProduct
+            show={showCreateProduct}
+            handleHide={handleHideCreateProduct}
+          />
         </Col>
       </Row>
     </Container>

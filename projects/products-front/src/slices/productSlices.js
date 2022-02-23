@@ -1,16 +1,37 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { getAllProducts } from "../api";
+import { getAllProducts, createProduct, deleteProduct, login } from "../api";
 
 const initialState = {};
 
 // Create async thunk fn
 export const getAllProductsAsync = createAsyncThunk(
-  "products/getALL",
+  "products/getAll",
   async () => {
     const response = await getAllProducts();
     return response.data;
   }
 );
+
+export const createProductAsync = createAsyncThunk(
+  "products/create",
+  async (product) => {
+    const response = await createProduct(product);
+    return response;
+  }
+);
+
+export const deleteProductAsync = createAsyncThunk(
+  "products/delete",
+  async (id) => {
+    const response = await deleteProduct(id);
+    return response;
+  }
+);
+
+export const loginAsync = createAsyncThunk("login", async (user) => {
+  const response = await login(user);
+  return response;
+});
 
 export const productSlice = createSlice({
   name: "products",
@@ -24,6 +45,15 @@ export const productSlice = createSlice({
       .addCase(getAllProductsAsync.fulfilled, (state, action) => {
         state.loading = false;
         state.products = action.payload;
+      })
+      .addCase(createProductAsync.fulfilled, (state, action) => {
+        state.created = action.payload;
+      })
+      .addCase(deleteProductAsync.fulfilled, (state, action) => {
+        state.deleted = action.payload;
+      })
+      .addCase(loginAsync.fulfilled, (state, action) => {
+        state.login = action.payload;
       });
   },
 });
