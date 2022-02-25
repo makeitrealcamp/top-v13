@@ -6,6 +6,7 @@ import {
   getAllProductsAsync,
   selectProducts,
   deleteProductAsync,
+  productToEdit,
 } from "../slices/productSlices";
 
 const ProductList = () => {
@@ -16,8 +17,8 @@ const ProductList = () => {
     dispatch(getAllProductsAsync());
   }, []);
 
-  const updateProduct = (id) => {
-    console.log(id);
+  const updateProduct = (product) => {
+    dispatch(productToEdit(product));
   };
 
   const deleteProduct = async (id) => {
@@ -34,7 +35,7 @@ const ProductList = () => {
           <Card key={index}>
             <Card.Body>
               {product.name}: {product.price}
-              <Button onClick={() => updateProduct(product._id)}>Edit</Button>
+              <Button onClick={() => updateProduct(product)}>Edit</Button>
               <Button onClick={() => deleteProduct(product._id)}>Delete</Button>
             </Card.Body>
           </Card>

@@ -8,9 +8,14 @@ const ENPOINTS = {
 };
 
 export const getAllProducts = () => {
+  const token = JSON.parse(localStorage.getItem("infoUser")).token;
   const path = `${API_SERVER}${ENPOINTS.GET_ALL}`;
   return new Promise((resolve, reject) => {
-    fetch(path)
+    fetch(path, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
       .then((response) => response.json())
       .then((data) => {
         resolve({ data });
@@ -22,6 +27,7 @@ export const getAllProducts = () => {
 };
 
 export const createProduct = (product) => {
+  const token = JSON.parse(localStorage.getItem("infoUser")).token;
   const path = `${API_SERVER}${ENPOINTS.CREATE}`;
   return new Promise((resolve, reject) => {
     fetch(path, {
@@ -29,6 +35,7 @@ export const createProduct = (product) => {
       body: JSON.stringify(product),
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
     })
       .then((response) => response.json())
@@ -42,11 +49,14 @@ export const createProduct = (product) => {
 };
 
 export const deleteProduct = (id) => {
+  const token = JSON.parse(localStorage.getItem("infoUser")).token;
   const path = `${API_SERVER}${ENPOINTS.DELETE}/${id}`;
-
   return new Promise((resolve, reject) => {
     fetch(path, {
       method: "DELETE",
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
     })
       .then((response) => response.json())
       .then((data) => {

@@ -22,11 +22,10 @@ const productRoutes = {
   DELETE: "/products/delete/:id",
 };
 
-//router.get(productRoutes.GET_ALL, validateToken, getAllProducts);
-router.get(productRoutes.GET_ALL, getAllProducts);
-router.get(productRoutes.GET_ONE, getOneProduct);
-router.post(productRoutes.CREATE, createProduct);
-router.put(productRoutes.UPDATE, findProduct, updateProduct);
-router.delete(productRoutes.DELETE, deleteProduct);
+router.get(productRoutes.GET_ALL, validateToken, getAllProducts);
+router.get(productRoutes.GET_ONE, validateToken, getOneProduct);
+router.post(productRoutes.CREATE, validateToken, createProduct);
+router.put(productRoutes.UPDATE, validateToken, findProduct, updateProduct);
+router.delete(productRoutes.DELETE, validateToken, deleteProduct);
 
 export default router;
