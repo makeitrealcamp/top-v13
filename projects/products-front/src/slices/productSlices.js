@@ -1,5 +1,10 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { getAllProducts, createProduct, deleteProduct } from "../api";
+import {
+  getAllProducts,
+  createProduct,
+  deleteProduct,
+  updateProduct,
+} from "../api";
 
 const initialState = {};
 
@@ -28,6 +33,14 @@ export const deleteProductAsync = createAsyncThunk(
   }
 );
 
+export const updateProductAsync = createAsyncThunk(
+  "products/update",
+  async (id, product) => {
+    const response = await updateProduct(id, product);
+    return response;
+  }
+);
+
 export const productSlice = createSlice({
   name: "products",
   initialState,
@@ -35,6 +48,9 @@ export const productSlice = createSlice({
     productToEdit: (state, action) => {
       state.productToEdit = action.payload;
       state.showModalToEdit = true;
+    },
+    hideModalToEdit: (state) => {
+      state.showModalToEdit = false;
     },
   },
   extraReducers: (builder) => {
@@ -55,7 +71,7 @@ export const productSlice = createSlice({
   },
 });
 
-export const { productToEdit } = productSlice.actions;
+export const { productToEdit, hideModalToEdit } = productSlice.actions;
 
 export const selectShowModalToEdit = (state) => state.products.showModalToEdit;
 export const selectProducts = (state) => state.products.products;

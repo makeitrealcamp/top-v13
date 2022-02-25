@@ -1,16 +1,20 @@
 import { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 import ProductList from "../../components/ProductList";
 import CreateProduct from "../../components/CreateProduct";
 import EditProduct from "../../components/EditProduct";
 
-import { selectShowModalToEdit } from "../../slices/productSlices";
+import {
+  selectShowModalToEdit,
+  hideModalToEdit,
+} from "../../slices/productSlices";
 
 const ProductPage = () => {
   const [showCreateProduct, setShowCreateProduct] = useState(false);
   const showModalToEdit = useSelector(selectShowModalToEdit);
+  const dispatch = useDispatch();
 
   const handleShowCreateProduct = () => {
     setShowCreateProduct(true);
@@ -32,7 +36,10 @@ const ProductPage = () => {
             show={showCreateProduct}
             handleHide={handleHideCreateProduct}
           />
-          <EditProduct show={showModalToEdit} />
+          <EditProduct
+            show={showModalToEdit}
+            handleHide={() => dispatch(hideModalToEdit())}
+          />
         </Col>
       </Row>
     </Container>

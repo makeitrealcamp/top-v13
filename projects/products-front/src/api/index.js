@@ -4,6 +4,7 @@ const ENPOINTS = {
   GET_ALL: "/api/products",
   CREATE: "/api/products/create",
   DELETE: "/api/products/delete",
+  UPDATE: "/api/products/update",
   LOGIN: "/api/login",
 };
 
@@ -55,6 +56,28 @@ export const deleteProduct = (id) => {
     fetch(path, {
       method: "DELETE",
       headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        resolve(true);
+      })
+      .catch((err) => {
+        reject({ error: err });
+      });
+  });
+};
+
+export const updateProduct = (id, product) => {
+  const token = JSON.parse(localStorage.getItem("infoUser")).token;
+  const path = `${API_SERVER}${ENPOINTS.UPDATE}/${id}`;
+  return new Promise((resolve, reject) => {
+    fetch(path, {
+      method: "POST",
+      body: JSON.stringify(product),
+      headers: {
+        "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
       },
     })
