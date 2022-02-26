@@ -31,7 +31,7 @@ const EditProduct = ({ show, handleHide }) => {
 
     const { _id: idProduct } = productToEdit;
 
-    await dispatch(updateProductAsync(idProduct, product));
+    await dispatch(updateProductAsync({ id: idProduct, ...product }));
     dispatch(getAllProductsAsync());
   };
 

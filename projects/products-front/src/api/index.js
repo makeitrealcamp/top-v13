@@ -69,12 +69,12 @@ export const deleteProduct = (id) => {
   });
 };
 
-export const updateProduct = (id, product) => {
+export const updateProduct = ({ id, ...product }) => {
   const token = JSON.parse(localStorage.getItem("infoUser")).token;
   const path = `${API_SERVER}${ENPOINTS.UPDATE}/${id}`;
   return new Promise((resolve, reject) => {
     fetch(path, {
-      method: "POST",
+      method: "PUT",
       body: JSON.stringify(product),
       headers: {
         "Content-Type": "application/json",

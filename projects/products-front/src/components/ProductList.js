@@ -34,7 +34,7 @@ const ProductList = () => {
         products.map((product, index) => (
           <Card key={index}>
             <Card.Body>
-              {product.name}: {product.price}
+              ID: {product._id}, {product.name}: {product.price}
               <Button onClick={() => updateProduct(product)}>Edit</Button>
               <Button onClick={() => deleteProduct(product._id)}>Delete</Button>
             </Card.Body>
