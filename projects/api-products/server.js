@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import "dotenv/config";
 import cors from "cors";
+import senderMail from "./api/services/senderMail.js";
 
 import { productCtlr } from "./api/controllers/index.js";
 import { productRouter, userRouter } from "./api/routes/index.js";
@@ -37,6 +38,27 @@ app.get("/", (request, response) => {
 
 app.use("/api", productRouter);
 app.use("/api", userRouter);
+
+app.get("/mail", async (req, res) => {
+  senderMail.config = {
+    host: "smtp.sendgrid.net",
+    port: 465,
+    secure: true, // true for 465, false for other ports
+    auth: {
+      user: "apikey", // generated ethereal user
+      pass: process.env.SENDGRID_API_KEY, // generated ethereal password
+    },
+  };
+
+  const info = await senderMail.sendMail({
+    from: '"Fred Foo 👻" <mariagiraldo4@gmail.com>', // sender address
+    to: "mariagiraldo4@gmail.com", // list of receivers
+    subject: "Hello ✔", // Subject line
+    text: "Hello world?", // plain text body
+    html: "<b>Hello world?</b>", // html body
+  });
+  res.json(info);
+});
 
 const PORT = process.env.PORT || 5000;
 

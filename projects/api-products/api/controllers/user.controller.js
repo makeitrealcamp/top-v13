@@ -1,4 +1,5 @@
-import { User } from "../models/index.js";
+import { User } from "../models/index.js";.find
+import { senderMail } from "maria-service-send-mail";
 
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
@@ -44,6 +45,25 @@ export const createUser = async (req, res) => {
 
   try {
     await newUser.save();
+
+    // Send email
+    senderMail.config = {
+      host: "smtp.sendgrid.net",
+      port: 465,
+      secure: true, // true for 465, false for other ports
+      auth: {
+        user: "apikey", // generated ethereal user
+        pass: process.env.SENDGRID_API_KEY, // generated ethereal password
+      },
+    };
+
+    await senderMail.sendMail({
+      from: '"Fred Foo 👻" <mariagiraldo4@gmail.com>', // sender address
+      to: "mariagiraldo4@gmail.com", // list of receivers
+      subject: "Hello ✔", // Subject line
+      text: "Se ha creado el usuario correctamente en api products!", // plain text body
+    });
+
     res.status(201).send();
   } catch (err) {
     res.status(500).send(err);
