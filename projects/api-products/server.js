@@ -3,9 +3,11 @@ import mongoose from "mongoose";
 import "dotenv/config";
 import cors from "cors";
 import senderMail from "./api/services/senderMail.js";
+import path from "path";
 
 import { productCtlr } from "./api/controllers/index.js";
 import { productRouter, userRouter } from "./api/routes/index.js";
+import uploadRouter from "./api/routes/upload.routes.js";
 
 const { getAllProducts, getOneProduct, createProduct } = productCtlr;
 
@@ -59,6 +61,13 @@ app.get("/mail", async (req, res) => {
   });
   res.json(info);
 });
+
+//console.log("PATH ", path);
+
+// Static route
+app.use("/static", express.static("upload"));
+
+app.use(uploadRouter);
 
 const PORT = process.env.PORT || 5000;
 

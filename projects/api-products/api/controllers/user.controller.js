@@ -1,4 +1,4 @@
-import { User } from "../models/index.js";.find
+import { User } from "../models/index.js";
 import { senderMail } from "maria-service-send-mail";
 
 import bcrypt from "bcrypt";
