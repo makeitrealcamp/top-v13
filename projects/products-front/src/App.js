@@ -10,6 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import Navbar from "./components/Navbar";
+import Upload from "./components/Upload";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route index element={<Login />} />
         <Route path="products" element={<ProductPage />} />
+        <Route path="upload" element={<Upload />} />
       </Routes>
     </BrowserRouter>
   );
