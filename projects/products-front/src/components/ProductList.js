@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button, Card } from "react-bootstrap";
+import { CloudinaryContext, Image, Transformation } from "cloudinary-react";
 
 import {
   getAllProductsAsync,
@@ -37,6 +38,13 @@ const ProductList = () => {
               ID: {product._id}, {product.name}: {product.price}
               <Button onClick={() => updateProduct(product)}>Edit</Button>
               <Button onClick={() => deleteProduct(product._id)}>Delete</Button>
+              {product.image && (
+                <CloudinaryContext cloudName="dbuk6m576">
+                  <Image publicId={product.image} width="500px">
+                    <Transformation height="400" width="70" crop="fill" />
+                  </Image>
+                </CloudinaryContext>
+              )}
             </Card.Body>
           </Card>
         ))}

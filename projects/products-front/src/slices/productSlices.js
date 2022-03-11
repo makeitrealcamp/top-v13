@@ -5,6 +5,7 @@ import {
   deleteProduct,
   updateProduct,
 } from "../api";
+import { sendImage, sendImageCloudinary } from "../services/uploadService";
 
 const initialState = {};
 
@@ -41,6 +42,20 @@ export const updateProductAsync = createAsyncThunk(
   }
 );
 
+export const uploadImageAsync = createAsyncThunk(
+  "product/uploadImage",
+  async (file) => {
+    sendImage("test-img", file);
+  }
+);
+
+export const uploadImageCloudunaryAsync = createAsyncThunk(
+  "product/uploadImageCloudinary",
+  async (file) => {
+    sendImageCloudinary("test-img", file);
+  }
+);
+
 export const productSlice = createSlice({
   name: "products",
   initialState,
@@ -67,6 +82,9 @@ export const productSlice = createSlice({
       })
       .addCase(deleteProductAsync.fulfilled, (state, action) => {
         state.deleted = action.payload;
+      })
+      .addCase(uploadImageAsync.fulfilled, (state, action) => {
+        state.imageUploaded = true;
       });
   },
 });

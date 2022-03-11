@@ -1,15 +1,20 @@
 import { useState } from "react";
-import { sendImage } from "../../services/uploadService";
+import { useDispatch } from "react-redux";
+import {
+  uploadImageAsync,
+  uploadImageCloudunaryAsync,
+} from "../../slices/productSlices.js";
 
 const Upload = () => {
   const [pathImage, setPathImage] = useState(
     "http://localhost:5000/static/test.png"
   );
   const [file, setFile] = useState();
+  const dispatch = useDispatch();
 
   const handleSendImage = (e) => {
     e.preventDefault();
-    sendImage("test-img", file);
+    dispatch(uploadImageAsync(file));
   };
 
   const handleChange = (e) => {
@@ -30,13 +35,22 @@ const Upload = () => {
     }
   };
 
+  const handleSendImageWithCloudinary = (e) => {
+    e.preventDefault();
+    console.log("handleSendImageWithCloudinary");
+    dispatch(uploadImageCloudunaryAsync(file));
+  };
+
   return (
     <form>
       <div>
         <input type="file" placeholder="file" onChange={handleChange} />
         <img src={pathImage} alt="image" />
         <button type="submit" onClick={handleSendImage}>
-          Send Image
+          Send Image with my API
+        </button>
+        <button type="submit" onClick={handleSendImageWithCloudinary}>
+          Send Image with cloudinary
         </button>
       </div>
     </form>

@@ -1,7 +1,8 @@
 import express from "express";
 import multer from "multer";
+import storage from "../config/multer.js";
 
-const uploader = multer({ dest: "upload/" });
+const uploader = multer({ storage });
 
 const router = express.Router();
 
@@ -10,7 +11,6 @@ const uploadRoutes = {
 };
 
 router.post(uploadRoutes.UPLOAD, uploader.single("file"), async (req, res) => {
-  console.log("******************");
   res.send("sent image");
 });
 

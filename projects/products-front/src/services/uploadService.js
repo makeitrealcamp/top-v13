@@ -1,12 +1,22 @@
 import axios from "axios";
 
 export const sendImage = (name, file) => {
-  console.log("SendImage", name, file);
-
   const form = new FormData();
   form.append("name", name);
   form.append("file", file, "form-data");
   const apiUrl = "http://localhost:5000/upload";
+  axios.post(apiUrl, form).then((result) => {
+    console.log("Result image uploaded ", result);
+  });
+};
+
+export const sendImageCloudinary = (name, file) => {
+  const form = new FormData();
+  form.append("file", file, "form-data");
+  form.append("upload_preset", "rdqqmpve");
+  const cloudName = "dbuk6m576";
+
+  const apiUrl = `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`;
   axios.post(apiUrl, form).then((result) => {
     console.log("Result image uploaded ", result);
   });

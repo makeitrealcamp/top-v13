@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Modal, Form, Button } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import {
@@ -7,6 +8,8 @@ import {
 
 const CreateProduct = ({ show, handleHide }) => {
   const dispatch = useDispatch();
+  const [imageUploaded, setImageUploaded] = useState();
+  const [imageId, setImageId] = useState();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -19,10 +22,29 @@ const CreateProduct = ({ show, handleHide }) => {
       price: elements[2].value,
       discount: elements[3].value,
       active: elements[4].checked,
+      image: imageUploaded,
+      image_id: imageId,
     };
 
     await dispatch(createProductAsync(product));
     dispatch(getAllProductsAsync());
+  };
+
+  const showWidgetCloudinary = () => {
+    console.log("showWidgetCloudinary", window.cloudinary);
+    window.cloudinary.openUploadWidget(
+      {
+        cloudName: "dbuk6m576",
+        uploadPreset: "rdqqmpve",
+      },
+      (err, result) => {
+        if (!err && result?.event === "success") {
+          const { secure_url, public_id } = result.info;
+          setImageUploaded(secure_url);
+          setImageId(public_id);
+        }
+      }
+    );
   };
 
   return (
@@ -51,6 +73,8 @@ const CreateProduct = ({ show, handleHide }) => {
           <Form.Group>
             <Form.Check type="checkbox" label="Active" />
           </Form.Group>
+          <Button onClick={showWidgetCloudinary}>Upload image</Button>
+          <br />
           <Button type="submit">Create</Button>
         </Form>
       </Modal.Body>
