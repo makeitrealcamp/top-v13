@@ -1,15 +1,23 @@
 import express from "express";
 import mongoose from "mongoose";
-import "dotenv/config";
+import dotenv from "dotenv";
 import cors from "cors";
 import senderMail from "./api/services/senderMail.js";
 import path from "path";
+import { fileURLToPath } from "url";
 
 import { productCtlr } from "./api/controllers/index.js";
 import { productRouter, userRouter } from "./api/routes/index.js";
 import uploadRouter from "./api/routes/upload.routes.js";
 
 const { getAllProducts, getOneProduct, createProduct } = productCtlr;
+
+// config environments
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({
+  path: path.resolve(__dirname, `${process.env.NODE_ENV}.env`),
+});
 
 /**
  * Mongoose

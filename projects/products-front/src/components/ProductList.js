@@ -27,9 +27,10 @@ const ProductList = () => {
     await dispatch(deleteProductAsync(id));
     dispatch(getAllProductsAsync());
   };
+  console.log("products", products);
 
   return (
-    <div>
+    <div data-test-id="card-list">
       {products &&
         products.length > 0 &&
         products.map((product, index) => (

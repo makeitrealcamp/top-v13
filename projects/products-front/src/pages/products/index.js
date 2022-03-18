@@ -28,7 +28,12 @@ const ProductPage = () => {
     <Container>
       <Row>
         <Col lg={2}>
-          <Button onClick={handleShowCreateProduct}>Create product</Button>
+          <Button
+            data-test-id="create-button"
+            onClick={handleShowCreateProduct}
+          >
+            Create product
+          </Button>
         </Col>
         <Col>
           <ProductList />
