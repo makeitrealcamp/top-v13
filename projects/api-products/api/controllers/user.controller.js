@@ -69,3 +69,44 @@ export const createUser = async (req, res) => {
     res.status(500).send(err);
   }
 };
+
+// Register user by google
+export const registerByGoogle = async (req, res) => {
+  const { profileObj } = req.body;
+
+  const user = {
+    email: profileObj.email,
+    name: profileObj.name,
+    document: profileObj.googleId,
+    is_google_account: true,
+    google_account: profileObj,
+  };
+
+  const newUser = new User({ ...user });
+
+  try {
+    await newUser.save();
+
+    // Send email
+    senderMail.config = {
+      host: "smtp.sendgrid.net",
+      port: 465,
+      secure: true, // true for 465, false for other ports
+      auth: {
+        user: "apikey", // generated ethereal user
+        pass: process.env.SENDGRID_API_KEY, // generated ethereal password
+      },
+    };
+
+    await senderMail.sendMail({
+      from: '"Fred Foo 👻" <mariagiraldo4@gmail.com>', // sender address
+      to: "mariagiraldo4@gmail.com", // list of receivers
+      subject: "Hello ✔", // Subject line
+      text: "Se ha creado el usuario correctamente en api products!", // plain text body
+    });
+
+    res.status(201).send();
+  } catch (err) {
+    res.status(500).send(err);
+  }
+};

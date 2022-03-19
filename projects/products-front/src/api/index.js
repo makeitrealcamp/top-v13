@@ -6,6 +6,7 @@ const ENPOINTS = {
   DELETE: "/api/products/delete",
   UPDATE: "/api/products/update",
   LOGIN: "/api/login",
+  REGISTER_BY_GOOGLE: "/api/users/google/register",
 };
 
 export const getAllProducts = () => {
@@ -105,6 +106,28 @@ export const login = (user) => {
       .then((response) => response.json())
       .then((data) => {
         resolve({ token: data.token });
+      })
+      .catch((err) => {
+        reject({ error: err });
+      });
+  });
+};
+
+export const createGoogleUser = (data) => {
+  //const token = JSON.parse(localStorage.getItem("infoUser")).token;
+  const path = `${API_SERVER}${ENPOINTS.REGISTER_BY_GOOGLE}`;
+
+  return new Promise((resolve, reject) => {
+    fetch(path, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        resolve(true);
       })
       .catch((err) => {
         reject({ error: err });

@@ -5,6 +5,7 @@ import { Counter } from "./features/counter/Counter";
 //import ProductList from "./components/ProductList";
 import ProductPage from "./pages/products";
 import Login from "./components/Login";
+import { Register } from "./components/Register";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -20,6 +21,7 @@ function App() {
         <Route index element={<Login />} />
         <Route path="products" element={<ProductPage />} />
         <Route path="upload" element={<Upload />} />
+        <Route path="register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );

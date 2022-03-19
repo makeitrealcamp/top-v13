@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { GoogleLogin } from "react-google-login";
 import { loginAsync, selectUserLoggued } from "../slices/userSlice";
 
 const Login = () => {
@@ -17,6 +18,14 @@ const Login = () => {
       password: elements[1].value,
     };
     dispatch(loginAsync(user));
+  };
+
+  const responseSucessGoogle = (response) => {
+    console.log("Response google ok ", response);
+  };
+
+  const responseFailureGoogle = (response) => {
+    console.log("Response google error", response);
   };
 
   useEffect(() => {
@@ -51,6 +60,14 @@ const Login = () => {
         <Button variant="primary" type="submit">
           Login
         </Button>
+
+        <GoogleLogin
+          clientId={process.env.REACT_APP_OAUTH_CLIENT_ID}
+          buttonText="Register"
+          onSuccess={responseSucessGoogle}
+          onFailure={responseFailureGoogle}
+          cookiePolicy={"single_host_origin"}
+        />
       </Form>
     </Container>
   );

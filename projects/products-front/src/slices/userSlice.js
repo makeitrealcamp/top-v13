@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { login } from "../api";
+import { login, createGoogleUser } from "../api";
 
 const initialState = {};
 
@@ -7,6 +7,15 @@ export const loginAsync = createAsyncThunk("login", async (user) => {
   const response = await login(user);
   return response;
 });
+
+export const registerUserAsync = createAsyncThunk(
+  "user/register",
+  async (data) => {
+    console.log("registerUserAsync", data);
+    const response = await createGoogleUser(data);
+    return response;
+  }
+);
 
 export const userSlice = createSlice({
   name: "user",

@@ -15,6 +15,8 @@ const { getAllProducts, getOneProduct, createProduct } = productCtlr;
 // config environments
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+console.log("Dirname ", path.resolve(__dirname, `${process.env.NODE_ENV}.env`));
 dotenv.config({
   path: path.resolve(__dirname, `${process.env.NODE_ENV}.env`),
 });
@@ -25,6 +27,8 @@ dotenv.config({
 
 // Connect to db
 const dbConnection = process.env.DB_STRING_CONNECTION;
+
+console.log("dbConecction ", dbConnection);
 await mongoose.connect(dbConnection);
 
 // Listener to connection error
