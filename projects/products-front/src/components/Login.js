@@ -21,7 +21,12 @@ const Login = () => {
   };
 
   const responseSucessGoogle = (response) => {
-    console.log("Response google ok ", response);
+    const user = {
+      googleToken: response.tokenId,
+      email: response.profileObj.email,
+    };
+
+    dispatch(loginAsync(user));
   };
 
   const responseFailureGoogle = (response) => {
@@ -63,7 +68,7 @@ const Login = () => {
 
         <GoogleLogin
           clientId={process.env.REACT_APP_OAUTH_CLIENT_ID}
-          buttonText="Register"
+          buttonText="Login with Google"
           onSuccess={responseSucessGoogle}
           onFailure={responseFailureGoogle}
           cookiePolicy={"single_host_origin"}

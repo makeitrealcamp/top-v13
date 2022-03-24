@@ -4,6 +4,28 @@ import { senderMail } from "maria-service-send-mail";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
+export const loginWithGoogle = async (req, res, next) => {
+  const { googleToken, email } = req.body;
+  if (!!!googleToken) next();
+
+  const user = await User.findOne({ email });
+  const { is_google_account: isGoogleAccount } = user || {};
+
+  if (isGoogleAccount) {
+    jwt.sign({ email }, process.env.SECRET_KEY, (error, token) => {
+      if (!error) {
+        res.status(200).json({
+          token,
+        });
+      } else {
+        res.status(403).send();
+      }
+    });
+  } else {
+    res.status(403).send();
+  }
+};
+
 export const login = async (req, res) => {
   const { email, password } = req.body;
 
