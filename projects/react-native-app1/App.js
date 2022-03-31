@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Layout } from "./components/Layout";
 import { HomeScreen } from "./components/Home";
 import { ProfileScreen } from "./components/Profile";
+import { CharactersScreen } from "./components/Characters";
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +21,11 @@ const App = () => (
         name="Profile"
         component={ProfileScreen}
         options={{ title: "Your profile" }}
+      />
+      <Stack.Screen
+        name="Characters"
+        component={CharactersScreen}
+        options={{ title: "Rick and morthy characters" }}
       />
     </Stack.Navigator>
   </NavigationContainer>

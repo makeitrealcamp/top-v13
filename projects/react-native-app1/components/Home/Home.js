@@ -6,7 +6,11 @@ const Home = ({ navigation }) => {
     <View>
       <Button
         title="Go to Profile section"
-        onPress={() => navigation.navigate("Profile", { name: "Jane" })}
+        onPress={() => navigation.navigate("Profile")}
+      />
+      <Button
+        title="Go to Characters R&M"
+        onPress={() => navigation.navigate("Characters")}
       />
     </View>
   );

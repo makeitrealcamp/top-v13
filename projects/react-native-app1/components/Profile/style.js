@@ -1,16 +1,26 @@
 import { StyleSheet } from "react-native-web";
 
 export const styles = StyleSheet.create({
-  profileImage: {
-    backgroundColor: "blue",
-    width: 200,
-    height: 200,
+  profileScreen: {
+    flex: 1,
   },
 
-  profileForm: {},
+  profileTitle: {
+    flex: 1,
+  },
 
-  input: {
-    borderWidth: 1,
-    height: 30,
+  title: {
+    fontSize: 26,
+    textAlign: "center",
+  },
+
+  profileImage: {
+    flex: 1,
+    minHeight: 210,
+  },
+
+  profileForm: {
+    flex: 3,
+    padding: 20,
   },
 });
