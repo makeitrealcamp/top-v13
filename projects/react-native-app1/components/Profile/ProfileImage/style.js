@@ -11,6 +11,6 @@ export const styles = StyleSheet.create({
     backgroundColor: "blue",
     width: 200,
     height: 200,
-    borderRadius: 100,
+    borderRadius: "50%",
   },
 });

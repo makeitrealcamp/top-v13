@@ -22,11 +22,6 @@ const App = () => (
         component={ProfileScreen}
         options={{ title: "Your profile" }}
       />
-      <Stack.Screen
-        name="Characters"
-        component={CharactersScreen}
-        options={{ title: "Rick and morthy characters" }}
-      />
     </Stack.Navigator>
   </NavigationContainer>
 );

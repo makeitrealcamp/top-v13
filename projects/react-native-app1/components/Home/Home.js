@@ -1,18 +1,17 @@
 import react from "react";
-import { View, Button } from "react-native-web";
+import { View, Button, Text } from "react-native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { CharactersScreen } from "../Characters";
+import { ProfileScreen } from "../Profile";
+
+const Tab = createBottomTabNavigator();
 
 const Home = ({ navigation }) => {
   return (
-    <View>
-      <Button
-        title="Go to Profile section"
-        onPress={() => navigation.navigate("Profile")}
-      />
-      <Button
-        title="Go to Characters R&M"
-        onPress={() => navigation.navigate("Characters")}
-      />
-    </View>
+    <Tab.Navigator>
+      <Tab.Screen name="Characters" component={CharactersScreen} />
+      <Tab.Screen name="Profile" component={ProfileScreen} />
+    </Tab.Navigator>
   );
 };
 
