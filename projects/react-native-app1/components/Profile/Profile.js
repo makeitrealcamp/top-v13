@@ -1,5 +1,5 @@
 import react, { useState } from "react";
-import { View, Text, Button, Alert } from "react-native";
+import { View, Text, Button, Alert, ScrollView } from "react-native";
 
 import { InputField } from "../Input";
 import { ProfileImage } from "./ProfileImage";
@@ -31,7 +31,7 @@ const Profile = () => {
   };
 
   return (
-    <View style={profileScreen}>
+    <ScrollView style={profileScreen}>
       <View style={profileImage}>
         <ProfileImage sourceImg="https://picsum.photos/200/200" />
       </View>
@@ -58,10 +58,9 @@ const Profile = () => {
           value={form.lastname}
           handleChange={handleChangeInput}
         />
+        <Button title="save" onPress={saveProfile} />
       </View>
-
-      <Button title="save" onPress={saveProfile} />
-    </View>
+    </ScrollView>
   );
 };
 

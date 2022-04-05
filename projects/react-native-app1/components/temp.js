@@ -22,8 +22,6 @@ const App = () => {
     }
 
     const pickerResult = await ImagePicker.launchImageLibraryAsync();
-
-    console.log("pickerResult", pickerResult);
     const { uri } = pickerResult;
     setImage({ localImage: uri });
   };

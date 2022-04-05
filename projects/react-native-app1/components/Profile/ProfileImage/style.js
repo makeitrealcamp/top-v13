@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native-web";
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   profileImageContainer: {
@@ -11,6 +11,6 @@ export const styles = StyleSheet.create({
     backgroundColor: "blue",
     width: 200,
     height: 200,
-    borderRadius: "50%",
+    borderRadius: 100,
   },
 });
