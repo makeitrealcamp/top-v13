@@ -29,6 +29,8 @@ const Home = ({ navigation }) => {
             iconName = focused
               ? "account-arrow-left"
               : "account-arrow-left-outline";
+          } else {
+            iconName = "view-list";
           }
 
           return (
@@ -48,8 +50,20 @@ const Home = ({ navigation }) => {
           tabBarLabel: "Characters",
         }}
       />
-      <Tab.Screen name={profileName} component={ProfileScreen} />
-      <Tab.Screen name={pushNoti} component={PushNotificationScreen} />
+      <Tab.Screen
+        name={profileName}
+        component={ProfileScreen}
+        options={{
+          tabBarLabel: "Profile",
+        }}
+      />
+      <Tab.Screen
+        name={pushNoti}
+        component={PushNotificationScreen}
+        options={{
+          tabBarLabel: "Push Notifications",
+        }}
+      />
     </Tab.Navigator>
   );
 };
