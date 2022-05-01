@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  backend:
+    stdin_open: true
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    networks:
+      - red1-test
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/app/
+      - "/node_modules"
+    tty: true
+
+  bd:
+    image: redis
+    stdin_open: true
+    networks:
+      - red1-test
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./redis-conf:/redis-conf/
+    command: redis-server /redis-conf
+
+networks:
+  red1-test:
+    driver: bridge

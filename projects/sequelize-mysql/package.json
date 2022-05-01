@@ -1,5 +1,5 @@
 {
-  "name": "test-docker-node",
+  "name": "sequelize-mysql",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,10 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
+  "keywords": [],
   "author": "Maria",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3",
-    "nodemon": "^2.0.15"
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16",
+    "sequelize": "^6.19.0"
   }
 }
