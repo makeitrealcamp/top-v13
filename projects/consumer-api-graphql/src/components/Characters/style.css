@@ -1,0 +1,27 @@
+.characters-container {
+  display: flex;
+}
+
+.character {
+  display: flex;
+  border: 1px solid blue;
+  border-radius: 3px;
+  margin: 1rem;
+  width: auto;
+  display: inline-block;
+}
+
+.character > img {
+  width: 150px;
+}
+
+.error {
+  color: red;
+  padding: 2rem;
+  border: 1px solid red;
+}
+
+.in-progress {
+  padding: 2rem;
+  border: 1px solid green;
+}
