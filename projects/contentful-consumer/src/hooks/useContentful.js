@@ -15,10 +15,13 @@ const useContentful = () => {
       });
       const { items } = articles;
       const sanitizedData = items.map((item) => {
-        const img = item.fields.image.fields;
+        const img = item.fields.image.fields.file || "";
+        const { name, email } = item.fields?.author?.fields || {};
+
         return {
           ...item.fields,
           image: img,
+          author: name && email ? `${name} - ${email}` : "",
         };
       });
       return sanitizedData;

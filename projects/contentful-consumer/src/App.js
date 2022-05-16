@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import useContentful from "./hooks/useContentful";
+import { ArticleList } from "./components/Articles";
+
+import "antd/dist/antd.min.css";
 
 function App() {
   const { getArticles } = useContentful();
@@ -16,12 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      {articles.map(({ title, description }, i) => (
-        <div key={i}>
-          <h1>{title}</h1>
-          <p>{description}</p>
-        </div>
-      ))}
+      <ArticleList list={articles} />
     </div>
   );
 }
